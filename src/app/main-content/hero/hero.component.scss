@@ -1,0 +1,27 @@
+section{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    background-image: url('./../../../assets/img/herobg.png');
+    background-size: cover;
+    background-position: bottom;
+}
+.hero{
+    width: 100%;
+    max-width: 1440px;
+
+}
+
+
+.fancy-text span {
+  font-size: 92px;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #ff4081;
+    transform: scale(1.2);
+  }
+  
+}

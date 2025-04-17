@@ -1,0 +1,13 @@
+// @import url('./../../../styles.scss');
+@use './../../../styles.scss' as *;
+section{
+    background-color: $bgColor;
+    height: 1280px;
+    display: flex;
+    justify-content: center;
+    >div{
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+    }
+}
