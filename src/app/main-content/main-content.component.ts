@@ -6,6 +6,7 @@ import { SkillsComponent } from "./skills/skills.component";
 import { ProjectsComponent } from "./projects/projects.component";
 
 
+
 @Component({
   selector: 'app-main-content',
   imports: [CommonModule, HeroComponent, AboutMeComponent, SkillsComponent, ProjectsComponent],

@@ -1,10 +1,41 @@
 <section>
-    <div class="paddingSection">
+    <div>
         <div>
-            <p>Left</p>
+            <div class="paperStrip yellow">
+                <div [ngStyle]="rotation(-4)" class="textRotation">
+                    <img src="/assets/img/icons/location.png" alt="Location icon" />
+                    <span >Based in Schrozberg</span>
+                </div>
+            </div>
+            <div class="paperStrip blue">
+                <img src="/assets/img/icons/road.png" alt="Relocate icon" />
+                <span>Open to relocate</span>
+            </div>
+            <div class="paperStrip orange">
+                <div [ngStyle]="rotation(4)" class="textRotation">
+                    <img src="/assets/img/icons/home.png" alt="Remote icon" />
+                    <span > Open to work remote</span>
+                </div>
+            </div>
         </div>
-        <div>
-            Right
+        <div class="aboutMe">
+           <div class="titleContainer">
+                <span>WHO'S ANDREI ?</span>
+                <div>
+                    <h3>About me</h3>
+                    <div class="arrowAnimation">
+                        <img src="/assets/img/arrow.png" alt="">
+                    </div>
+                </div>
+           </div>
+           <div>
+                <p>I’m Octavian Buha.<br>
+                    <br>My passion for programming started in childhood, when I created game servers. Though I didn’t realize it back then, coding has always been my true calling. In 2024, after exploring other fields, I chose to fully dedicate myself to software development.<br>
+                    <br>I’m driven by the challenge of finding clean, efficient solutions and learning something new every day.<br> <br>Let’s build something great together!</p>
+           </div>
+           <div class="btnContainer">
+                <a href="" class="btnKontakt">Let's talk</a>
+           </div>
         </div>
     </div>
 </section>

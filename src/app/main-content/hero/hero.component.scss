@@ -1,18 +1,42 @@
+@use './../../../styles.scss' as *;
+h1{
+  font-size: 128px;
+  font-weight: 700;
+  color: $ColorWhite;
+  margin: 0;
+}
+h2{
+  color: $ColorWhite;
+}
+
 section{
+    position: relative;
+    z-index: 2;
     height: 900px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #fff;
-    background-image: url('./../../../assets/img/herobg.png');
+    align-items: center;
+    background-color: $ColorWhite;
+    background-image: url('/assets/img/herobg.png');
     background-size: cover;
     background-position: bottom;
+  }
+
+.paddingSection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 864px;
+  max-height: 489px;
 }
 .hero{
     width: 100%;
     max-width: 1440px;
 
 }
-
 
 .fancy-text span {
   font-size: 92px;
@@ -24,4 +48,150 @@ section{
     transform: scale(1.2);
   }
   
+}
+
+.imgHero{
+  width: 40px;
+  height: 40px;
+}
+
+.position-social-icons{
+  position: absolute;
+  bottom: 110px;
+  z-index: -1;
+  display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1440px;
+      width: 100%;
+}
+
+.topPositionHero{
+  display: flex;
+  gap: 61px;
+
+}
+.btnHello{
+
+}
+
+.btnKontakt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $ColorWhite;
+  width: 154px;
+  max-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border: 1px solid $ColorWhite;
+  box-shadow: 2px 4px 0px 0px #F8F9FA;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #F87A55;
+    box-shadow: none;
+    transform: translate(2px, 4px); 
+    }
+  }
+
+  .bottomPositionHero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+  }
+  .hover-container{
+    display: flex;
+    .btn-show{
+      display: block;
+      text-decoration: none;
+      color: $ColorWhite;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border: 1px solid $ColorWhite;
+      border-radius: 100px;
+    }
+    .btn-hover{
+      display: none;
+      text-decoration: none;
+      color: $ColorWhite;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border: 1px solid $ColorWhite;
+      border-radius: 100px;
+      transition: all 1s ease;
+    }
+
+    &:hover .btn-show{
+      display: none;
+    }
+    &:hover .btn-hover{
+      display: flex;
+      text-decoration: none;
+      color: $ColorWhite;
+      background-color: $ColorBlue;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 24px;
+      border: 1px solid $ColorWhite;
+      border-radius: 100px;
+    }
+  }
+
+.leftTopPositionHero{
+  margin-top: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.rightTopPositionHero{
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .emoticon{
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    display: flex;
+    gap: 10px;
+    transform: rotate(8deg);
+  }
+
+  .rightTopPositionHeroText{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
+
+  .emoticon-show{
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
+  .emoticon-hover{
+    display: none;
+  }
+  &:hover .emoticon-show{
+    display: none;
+  }
+  &:hover .emoticon-hover{
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
 }

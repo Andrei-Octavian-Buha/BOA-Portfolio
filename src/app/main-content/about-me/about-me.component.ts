@@ -9,4 +9,10 @@ import { CommonModule } from '@angular/common';
 })
 export class AboutMeComponent {
 
+
+  rotation(degrees: number) {
+    return {
+      'transform': `rotate(${degrees}deg)`
+    };
+  }
 }

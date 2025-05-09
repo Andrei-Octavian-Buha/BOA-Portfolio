@@ -1,12 +1,169 @@
 // @import url('./../../../styles.scss');
 @use './../../../styles.scss' as *;
 section{
-    background-color: $bgColor;
+    background-color: $ColorWhite;
     height: 720px;
     display: flex;
+    padding-top: 144px;
     justify-content: center;
     >div{
+        width: 100%;
         max-width: 1440px;
         display: flex;
+        justify-content: space-around;
+        margin: 0 120px;
     }
+
 }
+  
+  .paperStrip {
+    width: 560px;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+
+  }
+  
+  .yellow {
+    background-position: center;
+    background-image: url('/assets/img/paperYellow.png');
+    z-index: 3;
+  }
+  
+  .blue {
+    margin-top: -50px; 
+    background-position: center;
+    background-image: url('/assets/img/paperBlue.png');
+    z-index: 2;
+  }
+  
+  .orange {
+    margin-top: -50px; 
+    background-position: center;
+    background-image: url('/assets/img/paperOrange.png');
+    z-index: 1;
+  }
+  .textRotation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .btnKontakt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $ColorBlack;
+    width: 132px;
+    max-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border: 1px solid $ColorBlack;
+    box-shadow: 2px 4px 0px 0px #0E1013;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+  
+    &:hover{
+      cursor: pointer;
+      background-color: #F87A55;
+      color: $ColorWhite;
+      box-shadow: none;
+      transform: translate(2px, 4px); 
+      }
+    }
+
+    .aboutMe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 560px;
+        .titleContainer{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            span{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            h3{
+                margin: 0;
+                font-size: 64px;
+                font-weight: 700;
+            }
+        }
+    }
+  .btnContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+
+
+  .arrowAnimation {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  
+    img {
+      display: block;
+      position: relative;
+      z-index: 0;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: $ColorWhite; // schimbi cu culoarea fundalului tău
+      z-index: 1;
+      animation: reveal 3s cubic-bezier(0.8, 0, 0.2, 1) infinite;
+    }
+  }
+  
+  // Keyframes pentru animatie
+  @keyframes reveal {
+    0% {
+      left: 0;
+    }
+    25% {
+      left: 100%;
+    }
+    75% {
+      left: 100%;
+    }
+    100% {
+      left: 0;
+    }
+  }

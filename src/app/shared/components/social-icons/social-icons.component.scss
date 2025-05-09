@@ -1,0 +1,40 @@
+@use './../../../../styles.scss' as *;
+.socialIcon{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.imgBtn{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 1px solid $ColorWhite;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.65, 0, 0.35, 1); // Easing pentru efect elastic
+    >a{
+        >img{
+            position: relative;
+            z-index: 2;
+        };
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #3355FF;
+        border-radius: 50%;
+        transition: height 0.125s ease;
+        z-index: 1;
+      }
+  
+      &:hover::after {
+        height: 100%;
+      }
+    }

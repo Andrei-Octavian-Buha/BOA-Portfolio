@@ -1,13 +1,106 @@
+@use './../../../styles.scss' as *;
+
 section{
     height: 800px;
     display: flex;
     justify-content: center;
     background-color: #fff;
-    background-image: url('./../../../assets/img/skillsbg.png');
+    background-image: url('/assets/img/skillsbg.png');
     background-size: cover;
     background-position: bottom;
     >div{
+        display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 1440px;
+        margin: 171px 120px;
     }
 }
+
+.topContainer{
+    display: flex;
+    gap: 48px;
+
+}
+.textContainer{
+    max-width: 656px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/img/bgSkills.png');
+    padding: 39px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >p{
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+h3{
+    color: $ColorWhite;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+h2{
+    color: $ColorWhite;
+    font-size: 64px;
+    margin: 0;
+    text-wrap: disable;
+}
+
+.skillContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -10;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/skillHover.png');
+        transform-origin: top right;
+        z-index: 1;
+        animation: revealMask 3s ease-in-out infinite;
+      }
+}
+
+@keyframes revealMask {
+    0% {
+      width: 0;
+      transform: rotate(-50deg);
+      opacity: 1;
+    }
+    10% {
+        right: 0;
+      width: 100%;
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    90% {
+        top: 0;
+        right: 0;
+        width: 100%;
+        transform: rotate(0deg);
+        opacity: 1;
+      }
+    100% {
+      width: 0;
+      transform: rotate(-180deg);
+      opacity: 0;
+    }
+  }
