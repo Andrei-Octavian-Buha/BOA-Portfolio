@@ -13,9 +13,37 @@
                 <p>Experienced in JavaScript and Angular, I enjoy building dynamic and responsive user interfaces. Passionate about learning, I’m always exploring new front-end tools and frameworks to stay current and deliver efficient, modern web applications that scale well.</p>
             </div>
         </div>
-        <div>Bottom
-            <div>left</div>
-            <div>Right</div>
+        <div class="bottomContainer">
+            <div class="imgContainer">
+                @for (img of objImages; track $index) {
+                    <div>
+                        <img src="/assets/img/icons/{{img.src}}.png" alt="">
+                        <span>{{img.alt}}</span>
+                    </div>
+                }
+            </div>
+            <div class="lernContainer" (click)="toggle()">
+                @if (isVisible) {
+                    <div class="isActiveContainer">
+                        <img class="arrowImg"   src="/assets/img/icons/pullArrow.png" alt="">
+                        <p  class=""  >Pull to peel</p>
+                    </div>
+                  } @else {
+                    <div class="isInactiveContainer">
+                        <p>Also, I'm interested in diving into: </p>
+                      <div>
+                        <div>                        
+                            <img src="" alt="">
+                            <span>React</span>
+                        </div>
+                        <div>                        
+                            <img src="" alt="">
+                            <span>React</span>
+                        </div>
+                      </div>
+                    </div>
+                  }
+            </div>
         </div>
     </div>
 </section>

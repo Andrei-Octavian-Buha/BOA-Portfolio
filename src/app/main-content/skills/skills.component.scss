@@ -11,6 +11,7 @@ section{
     >div{
         display: flex;
         flex-direction: column;
+        gap: 48px;
         width: 100%;
         max-width: 1440px;
         margin: 171px 120px;
@@ -103,4 +104,84 @@ h2{
       transform: rotate(-180deg);
       opacity: 0;
     }
-  }
+}
+.bottomContainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 48px;
+}
+
+  .imgContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); // 5 Spalten, gleichmäßig verteilt
+    grid-template-rows: repeat(2, auto);    // 2 Reihen mit automatischer Höhe
+    gap: 20px 40px; // Abstand zwischen den Zellen, anpassbar
+    >div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        >img{
+            filter: grayscale(100%);
+            &:hover{
+                filter: grayscale(0%);
+                transform: scale(0.95);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        >span{
+            font-size: 18px;
+            font-weight: 400;
+            color: $ColorWhite;
+        }
+    }
+
+}
+
+.bgImg{
+    width: 200px;
+    height: 200px;
+}
+
+.arrowImg{
+    width: 40px;
+}
+.lernContainer{
+    display: flex;
+    transform: rotate(8deg);
+}
+
+.isActiveContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-image: url('/assets/img/activeBg.png');
+    >p{
+        margin: 0;
+        width: 167px;
+        text-align: center;
+        color: $ColorWhite;
+        font-family: Kalam;
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+.isInactiveContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-image: url('/assets/img/inactiveBg.png');
+}
