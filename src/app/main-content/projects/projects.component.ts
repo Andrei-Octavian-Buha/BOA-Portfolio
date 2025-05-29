@@ -23,7 +23,7 @@ projects = [
     img: '/assets/img/elPolloLoco.png' 
   },
   { 
-    title: 'DaBubble',
+    title: 'DaBubbleE',
     description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
     img: '/assets/img/daBubble.png' 
   }
