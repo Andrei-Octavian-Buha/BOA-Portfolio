@@ -12,7 +12,7 @@ export class SkillsComponent {
   isVisible = true;
 
   toggle() {
-    this.isVisible = !this.isVisible; // Inversează valoarea
+    this.isVisible = !this.isVisible; // Swich between true and false
   }
 
   images:Array <string> =['html','css','js','ts','angular','firebase','git','api','scrum','materialDesign'];
