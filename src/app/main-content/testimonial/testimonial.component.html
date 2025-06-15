@@ -1,1 +1,42 @@
-<p>testimonial works!</p>
+<section>
+    <div>
+        <div class="testimonialLayout">
+            <div class="testimonialHeader">
+                <div class="testimonialArrowWithText">
+                    <img src="/assets/img/testimonialLine.png" alt="">
+                    <span>IN THEIR WORDS:</span>
+                </div>
+                <h2>Colleagues' Thoughts</h2>
+            </div>
+            <div class="testimonialContent">
+                @for(testimonial of testimonials; track $index) {
+                    <div [ngStyle]="{'background-image': 'url(' + background[testimonial.bg] + ')'}" 
+                            class="testimonialCard"
+                            [ngClass]="[
+                                        'card-' + testimonial.card,
+                                    isTargetCard($index) ? 'special-style' : ''
+                                ]"
+                            (mouseenter)="onMouseEnter($index)"
+                            (mouseleave)="onMouseLeave()">
+                       
+                            <div class="testimonialCardContent">
+                                <div>
+                                    <p>{{testimonial.feedback}}</p>
+                                </div>
+                                <div class="testimonialDetails">
+                                    <div class="testimonialName">
+                                        <span [ngStyle]="{'font-weight' : 700}">{{testimonial.name}}</span>
+                                        <span [ngStyle]="{'font-weight' : 500, 'font-size': '16px'} ">{{testimonial.job}}</span>
+                                    </div>
+                                    <div class="testimonialSocialLink">
+                                        <span class="socialIcon"></span>
+                                        <a href="">Profile</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

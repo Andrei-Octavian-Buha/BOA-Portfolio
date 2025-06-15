@@ -1,0 +1,154 @@
+@use './../../../../styles.scss' as *;
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+.ng-invalid:not(form)  {
+  border-left: 15px solid #a94442; /* red */
+}
+.labelStyle{
+  font-size: 24px;
+  font-weight: 500;
+  color: $ColorWhite
+}
+.form-group{
+  &:hover{
+    .labelStyle{
+      color: $ColorOrange;
+    }
+  }
+}
+.form-group{
+  border-bottom:  1px solid $ColorYellow;
+  >input{
+    border: none;
+    background-color: transparent;
+    color: $ColorWhite;
+    font-size: 18px;
+    font-weight: 400;
+      &::placeholder{
+      color: $ColorWhite;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &:hover{
+    border-top: 2px solid $ColorBlue;
+    border-bottom:  1px solid $ColorBlue;
+  }
+}
+
+.custom-checkbox-wrapper{
+  input[type="checkbox"] {
+    appearance: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+    input[type="checkbox"]:checked + label .custom-checkbox span {
+            background-image: url('/assets/img/checkedImg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+  }
+
+  .custom-label {
+    display: flex;
+    align-items: center;;
+    gap: 8px;
+
+    .custom-checkbox {
+      cursor: pointer;
+      box-sizing: border-box;
+      width: 24px;
+      height: 24px;
+      border-radius: 2px;
+      transition: background-color 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      >span {
+        height: 14px;
+        width: 14px;
+        border: 2px solid $ColorBlue;
+        border-radius: 2px;
+
+      }
+      &:hover {
+        padding: 3px;
+          background-color: #3355FF4D;
+      }
+    }
+
+    a {
+      color: $ColorBlue;
+      text-decoration: none;
+      &:hover {
+        color: $ColorYellow;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+.alert{
+  color: $ColorOrange;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.alertError{
+  color: $ColorRed;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.buttonPosition{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.btnKontakt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $ColorWhite;
+  width: 154px;
+  max-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid $ColorWhite;
+  box-shadow: 2px 4px 0px 0px $ColorWhite;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  &:disabled{
+    background-color: transparent;
+    color: rgba(248, 249, 250, 0.5);
+    box-shadow: 2px 4px 0px 0px rgba(248, 249, 250, 0.5);
+    border: 1px solid rgba(248, 249, 250, 0.5);
+    cursor: not-allowed;
+  }
+  &:not(:disabled):hover{
+    cursor: pointer;
+    background-color: #F87A55;
+    box-shadow: none;
+    transform: translate(2px, 4px); 
+    }
+  &:not(:disabled):active{
+    background-color: #F87A55;
+    box-shadow: none;
+    transform: translate(2px, 4px); 
+
+  }
+
+  }
+

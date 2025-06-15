@@ -1,7 +1,11 @@
+// @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 $bgColor: #fff;
 $ColorWhite: #F8F9FA;
 $ColorBlue: #3355FF;
 $ColorBlack: #0E1013;
+$ColorOrange: #F87A55;
+$ColorYellow: #F8C94A;
+$ColorRed: #FF3A00;
 /* bricolage-grotesque-200 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -67,3 +71,23 @@ body{
     scroll-behavior: smooth;
 }
 
+
+span{
+  font-size: 20px;
+  font-weight: 500;
+}
+h2{
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+}
+h3{
+    margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+p{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -14,25 +14,7 @@ section{
     }
 }
 
-span{
-  font-size: 20px;
-  font-weight: 500;
-}
-h2{
-  margin: 0;
-  font-size: 62px;
-  font-weight: 700;
-}
-h3{
-    margin: 0;
-  font-size: 24px;
-  font-weight: 700;
-}
-p{
-  margin: 0;
-  font-size: 18px;
-  font-weight: 400;
-}
+
 
 .projects{
     display: grid;
@@ -129,6 +111,7 @@ p{
   position: relative;
   animation: moveDown 3s infinite ease-in-out;
   right: 20px;
+
 }
 
 @keyframes moveDown {
@@ -142,4 +125,11 @@ p{
   100% {
     top: 0;
   }
+}
+
+@media only screen and (max-width: 1220px) {
+.projects{
+    display: flex;
+    flex-direction: column;
+}
 }
