@@ -6,6 +6,9 @@ $ColorBlack: #0E1013;
 $ColorOrange: #F87A55;
 $ColorYellow: #F8C94A;
 $ColorRed: #FF3A00;
+
+@use "pkg:@fontsource/kalam/index.css";
+
 /* bricolage-grotesque-200 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

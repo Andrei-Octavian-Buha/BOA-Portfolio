@@ -2,22 +2,24 @@
 .ng-valid[required], .ng-valid.required  {
   border-left: 5px solid #42A948; /* green */
 }
+
 .ng-invalid:not(form)  {
   border-left: 15px solid #a94442; /* red */
 }
+
 .labelStyle{
   font-size: 24px;
   font-weight: 500;
   color: $ColorWhite
 }
+
 .form-group{
-  &:hover{
-    .labelStyle{
-      color: $ColorOrange;
-    }
-  }
-}
-.form-group{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 24px;
+
   border-bottom:  1px solid $ColorYellow;
   >input{
     border: none;
@@ -37,6 +39,9 @@
   &:hover{
     border-top: 2px solid $ColorBlue;
     border-bottom:  1px solid $ColorBlue;
+    .labelStyle{
+      color: $ColorOrange;
+    }
   }
 }
 
@@ -149,6 +154,12 @@
     transform: translate(2px, 4px); 
 
   }
-
   }
 
+
+.stickerLogo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 168px;
+}

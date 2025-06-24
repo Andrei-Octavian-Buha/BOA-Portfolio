@@ -1,0 +1,9 @@
+<span (mouseenter)="logoHoverd = true" (mouseleave)="logoHoverd = false">
+@if(logoHoverd){
+    <img class="logo" src="/assets/img/hoverLogo.png" alt="">
+}
+@else if (!logoHoverd) {
+
+<img  class="logo" src="/assets/img/logo.png" alt="">
+}
+</span>

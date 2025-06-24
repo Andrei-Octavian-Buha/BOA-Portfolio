@@ -9,6 +9,23 @@ import { SocialIconsComponent } from "../../shared/components/social-icons/socia
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
+    heroText = ['Frontend','Developer' ];
 
-  
+isHovered: boolean = false;
+hoveredIndex: number | null = null;
+hoveredCase: 'uppercase' | 'lowercase' | null = null;
+hoveredSource: string | null = null;
+
+onHover(letter: string , index: number , source: string) {
+  this.hoveredCase = letter === letter.toUpperCase() ? 'uppercase' : 'lowercase';
+  this.hoveredIndex = index;
+  this.hoveredSource = source;
+}
+onLeave() {
+  this.hoveredIndex = null;
+  this.hoveredCase = null;
+  this.hoveredSource = null;
+}
+
+
 }

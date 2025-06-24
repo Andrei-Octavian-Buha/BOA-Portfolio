@@ -2,17 +2,42 @@
     <div class="paddingSection">
         <div class="topPositionHero">
             <div class="leftTopPositionHero">
-                <div class="hover-container">
-                    <a class="btn-show">Hello World</a>
-                    <a class="btn-hover">I'M OCTAVIAN BUHA</a>
+                <div class="containerButton" >
+                    <div class="hover-container">
+                        <img
+                            [ngClass]="isHovered ? 'rotateMoveAnimation' : 'rotateMoveAnimationOut'"
+                            src="/assets/img/social/wavingHand.png"
+                            alt=""
+                        />
+                        <a
+                            class="btn"
+                            [ngClass]="{ 'btn-hover': isHovered, 'btn-show': !isHovered }"
+                            (mouseenter)="isHovered = true"
+                            (mouseleave)="isHovered = false"
+                        >
+                            {{ isHovered ? "I'M OCTAVIAN BUHA" : "Hello World" }}
+                        </a>
+                    </div>
                 </div>
-                <h1>Frontend</h1>
+                <div style="display: flex;">
+                    @for(letter of heroText[0].split(''); let i = $index; track i ) {
+                    <h1 (mouseenter)="onHover(letter, i, heroText[0])"
+                        (mouseleave)="onLeave()"
+                        [ngClass]="{
+                            'hover-uppercase': hoveredSource === heroText[0] && hoveredIndex === i && hoveredCase === 'uppercase',
+                            'hover-lowercase': hoveredSource === heroText[0] &&  hoveredIndex === i && hoveredCase === 'lowercase'
+                            }">{{ letter }}</h1>
+                    }
+                    
+                </div>
+
+
             </div>
             <div class="rightTopPositionHero">
-                <img src="/assets/img/heroImg.png" alt="">
+                <img class="heroImg" src="/assets/img/heroImg.png" alt="">
                 <div class="emoticon">
-                    <span class="rightTopPositionHeroText">Octavian</span>
-                    <div class="emoticon-container">
+                    <span class="rightTopPositionHeroText">Karl</span>
+                    <div>
                         <span class="emoticon-show">:)</span>
                         <span class="emoticon-hover">:D</span>
                     </div>
@@ -21,7 +46,17 @@
             </div>
         </div>
         <div class="bottomPositionHero">
-                <h1>DEVELOPER</h1>
+                                <div style="display: flex;">
+                    @for(letter of heroText[1].split(''); let i = $index; track i) {
+                        
+                    <h1 (mouseenter)="onHover(letter, i, heroText[1])"
+                        (mouseleave)="onLeave()"
+                        [ngClass]="{
+                            'hover-uppercase': hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'uppercase',
+                            'hover-lowercase':   hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'lowercase'
+                            }">{{ letter }}</h1>
+                    }
+                </div>
                 <a href="" class="btnKontakt">Get in Touch</a>
         </div>
     </div>

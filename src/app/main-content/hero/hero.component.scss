@@ -71,9 +71,6 @@ section{
   gap: 61px;
 
 }
-.btnHello{
-
-}
 
 .btnKontakt{
   display: flex;
@@ -96,55 +93,101 @@ section{
     background-color: #F87A55;
     box-shadow: none;
     transform: translate(2px, 4px); 
+  }
+}
+
+.bottomPositionHero{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+
+.containerButton{
+  width: 280px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.hover-container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 15px;
+}
+  .btn-show{
+    text-decoration: none;
+    color: $ColorWhite;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 24px;
+    border: 1px solid $ColorWhite;
+    border-radius: 100px;
+    cursor: pointer;
+        transition: background-color 0.6s ease;
+        &:hover{
+          background-color: $ColorBlue;
+    }
+  }
+  .btn-hover{
+    text-decoration: none;
+    color: $ColorWhite;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 24px;
+
+    border: 1px solid $ColorWhite;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    &:hover{
+          background-color: $ColorBlue;
     }
   }
 
-  .bottomPositionHero{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end;
-  }
-  .hover-container{
-    display: flex;
-    .btn-show{
-      display: block;
-      text-decoration: none;
-      color: $ColorWhite;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 12px 24px;
-      border: 1px solid $ColorWhite;
-      border-radius: 100px;
-    }
-    .btn-hover{
-      display: none;
-      text-decoration: none;
-      color: $ColorWhite;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 12px 24px;
-      border: 1px solid $ColorWhite;
-      border-radius: 100px;
-      transition: all 1s ease;
-    }
+.rotateMoveAnimation {
+    width: 32px;
+    position: absolute;
+    top: -24px;
+    left: 50%; 
+    transform-origin: center center;
+    animation: rotateMove 0.6s ease-in-out forwards;
+}
 
-    &:hover .btn-show{
-      display: none;
+.rotateMoveAnimationOut{
+    width: 32px;
+    margin-bottom: 16px;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform-origin: center center;
+    animation: rotateMoveOut 0.6s ease-in-out forwards;
+}
+
+@keyframes rotateMove {
+    0% {
+        transform: translate(-50%, -50%) rotate(-45deg);
+        opacity: 1;
     }
-    &:hover .btn-hover{
-      display: flex;
-      text-decoration: none;
-      color: $ColorWhite;
-      background-color: $ColorBlue;
-      font-size: 18px;
-      font-weight: 500;
-      padding: 12px 24px;
-      border: 1px solid $ColorWhite;
-      border-radius: 100px;
+    100% {
+        transform: translate(150%, -50%) rotate(360deg); 
+        opacity: 1;
     }
-  }
+}
+
+@keyframes rotateMoveOut {
+    0% {
+        transform: translate(100%, -50%) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0;
+    }
+}
 
 .leftTopPositionHero{
   margin-top: 29px;
@@ -157,24 +200,22 @@ section{
   position: relative;
   display: flex;
   justify-content: center;
-
+  rotate: 8deg;
   .emoticon{
     position: absolute;
-    bottom: 25px;
-    left: 40px;
+    bottom: 20px;
     display: flex;
     gap: 10px;
-    transform: rotate(8deg);
   }
-
   .rightTopPositionHeroText{
+  font-family: 'Kalam', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
     color:#0E1013;
   }
-
   .emoticon-show{
+  font-family: 'Kalam', sans-serif;
     display: flex;
     font-size: 24px;
     font-weight: 700;
@@ -188,10 +229,31 @@ section{
     display: none;
   }
   &:hover .emoticon-hover{
+  font-family: 'Kalam', sans-serif;
     display: flex;
     font-size: 24px;
     font-weight: 700;
     line-height: 120%;
     color:#0E1013;
+  }
+}
+
+.hover-uppercase {
+  text-transform: lowercase;
+  color: $ColorYellow;
+  cursor: pointer;
+}
+
+.hover-lowercase {
+  text-transform: uppercase;
+  color: $ColorYellow;
+    cursor: pointer;
+}
+
+.heroImg{
+  filter: grayscale(100%);
+  &:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
   }
 }

@@ -1,0 +1,9 @@
+.logo{
+  cursor: pointer;
+    width: 40px;
+    height: 40px;
+    &:hover{
+      filter: invert(1);
+      filter: contrast(1.2);
+    }
+}

@@ -1,5 +1,6 @@
-<div >
-    <form (ngSubmit)="onSubmit(contactPerson)" #contactPerson="ngForm">
+<div style="position: relative;">
+    <img class="stickerLogo" src="/assets/img/stickerFd.png" alt="">
+    <form (ngSubmit)="onSubmit(contactPerson)" #contactPerson="ngForm" style="display: flex; flex-direction: column; gap: 40px; padding-top: 128px;">
         <div>
             <div class="form-group">
                 <label for="firstContactName" class="labelStyle">What's your name?</label>
