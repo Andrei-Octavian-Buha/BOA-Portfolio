@@ -183,6 +183,9 @@ section{
         transform: translate(100%, -50%) rotate(360deg);
         opacity: 1;
     }
+        75% {
+        opacity: 0.5;
+    }
     100% {
         transform: translate(-50%, -50%) rotate(0deg);
         opacity: 0;
@@ -236,6 +239,11 @@ section{
     line-height: 120%;
     color:#0E1013;
   }
+  filter: grayscale(100%);
+  &:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+  }
 }
 
 .hover-uppercase {
@@ -250,10 +258,3 @@ section{
     cursor: pointer;
 }
 
-.heroImg{
-  filter: grayscale(100%);
-  &:hover{
-    filter: grayscale(0%);
-    transition: all 0.3s ease;
-  }
-}

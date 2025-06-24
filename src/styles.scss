@@ -65,7 +65,9 @@ $ColorRed: #FF3A00;
     font-weight: 800;
     src: url('/assets/fonts/bricolage-grotesque-v8-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
-
+html{
+  scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
