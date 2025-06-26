@@ -15,7 +15,7 @@
                             (mouseenter)="isHovered = true"
                             (mouseleave)="isHovered = false"
                         >
-                            {{ isHovered ? "I'M OCTAVIAN BUHA" : "Hello World" }}
+                            {{ isHovered ? ('INTRO' | translate) : "Hello World" }}
                         </a>
                     </div>
                 </div>
@@ -28,10 +28,7 @@
                             'hover-lowercase': hoveredSource === heroText[0] &&  hoveredIndex === i && hoveredCase === 'lowercase'
                             }">{{ letter }}</h1>
                     }
-                    
-                </div>
-
-
+                    </div>
             </div>
             <div class="rightTopPositionHero">
                 <img class="heroImg" src="/assets/img/heroImg.png" alt="">

@@ -3,16 +3,30 @@
         <app-logo></app-logo>
         <div style="width: 100%;">
             <ul class="navLinks">
-                <li ><a  class="aboutmebtn-element"  href="#about-me">About Me</a></li>
-                <li ><a  class="skillsbtn-element"   href="#skills">Skills</a></li>
-                <li ><a  class="projectsbtn-element" href="#projects">Projects</a></li>
-                <li ><a  class="contactbtn-element"  href="#footer">Contact</a></li>
+                <li class="aboutmebtn-element">
+                    <a    href="#about-me">About Me</a>
+                </li>
+                <li class="skillsbtn-element" >
+                    <a     href="#skills">Skills</a>
+                </li>
+                <li class="projectsbtn-element">
+                    <a   href="#projects">Projects</a>
+                </li>
+                <li class="contactbtn-element" >
+                    <a    href="#footer">Contact</a>
+                </li>
             </ul>
         </div>
-        <div class="language">
-           <p>EN</p>
-           <img src="/assets/img/lang.png" alt="">
-           <p>DE</p>
+        <div>
+            <div class="language-toggle">
+                <button class="languageBtn"  (click)="switchLanguage('en')" [class.active]="selectedLang === 'en'">EN</button>
+
+                <div class="slider">
+                    <span class="sliderIn"></span>
+                    <span class="sliderOut" [ngStyle]="{ left: selectedLang === 'en' ? '0' : '50%' }"></span>
+                </div>
+                <button class="languageBtn" (click)="switchLanguage('de')" [class.active]="selectedLang === 'de'">DE</button>
+            </div>
         </div>
     </div>
 </section>

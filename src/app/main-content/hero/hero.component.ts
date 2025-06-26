@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialIconsComponent } from "../../shared/components/social-icons/social-icons.component";
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @Component({
   selector: 'app-hero',
-  imports: [CommonModule, SocialIconsComponent],
+  imports: [CommonModule, SocialIconsComponent, TranslateModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-    heroText = ['Frontend','Developer' ];
+    heroText = ['Frontend','DEVELOPER' ];
 
 isHovered: boolean = false;
 hoveredIndex: number | null = null;
