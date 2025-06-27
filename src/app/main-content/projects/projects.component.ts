@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
+isSmallScreen = window.innerWidth <= 760;
 
 hoverIndex: number | null = null;
 hoverTimeout: any;

@@ -264,8 +264,14 @@ section{
   width: 204px;
   height: 244px;
 }
-@media (max-width: 767px) {
 
+.mobileHero{
+  display: none;
+}
+.desktopHero{
+  display: flex;
+}
+@media (max-width: 896px) {
 h1{
   font-size: 64px;
   font-weight: 700;
@@ -273,4 +279,60 @@ h1{
   margin: 0;
 }
 
+
+.paddingSection{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 864px;
+  max-height: 489px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.bottomPositionHero{
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+}
+
+.btnContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.imgContainerMobile{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobileHero{
+  display: flex;
+}
+
+.desktopHero{
+  display: none;
+}
+
+}
+
+
+@media (max-width: 425px) {
+h1{
+  font-size: 48px;
+  font-weight: 700;
+  color: $ColorWhite;
+  margin: 0;
+}
 }

@@ -1,5 +1,5 @@
 <div style="position: relative;">
-    <img class="stickerLogo" src="/assets/img/stickerFd.png" alt="">
+    <img class="stickerLogo desktop" src="/assets/img/stickerFd.png" alt="">
     <form (ngSubmit)="onSubmit(contactPerson)" #contactPerson="ngForm" style="display: flex; flex-direction: column; gap: 40px; padding-top: 128px;">
         <div>
             <div class="form-group">
@@ -41,6 +41,9 @@
             </div>
             }
             <div class="buttonPosition">
+                <div class="arrowAnimation mobile">
+                    <img src="/assets/img/lineContact.png" alt="">
+                </div>
                 <button [disabled]="!model.agree" class="btnKontakt">Submit</button>
             </div>
         </div>

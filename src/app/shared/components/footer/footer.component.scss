@@ -6,7 +6,7 @@ section{
     background-image: url('/assets/img/footerbg.png');
     background-size: cover;
     background-position: top;
-    background-color: $ColorWhite;
+    background-color: #fff;
     box-sizing: border-box;
     >div{
         max-width: 1440px;
@@ -72,6 +72,7 @@ section{
 
 .bottomContainer{
     width: 100%;
+    margin-bottom: 56px;
     display: flex;
     flex-direction: column;
 }
@@ -227,4 +228,76 @@ section{
     font-size: 18px;
     font-weight: 700;
   }
+}
+@media only screen and (max-width: 1220px) {
+  .desktop{
+    display: none;
+  }
+
+}
+
+@media (max-width: 887px) {
+
+section{
+
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/img/footerbg.png');
+    background-size: cover;
+    background-position: top;
+    background-color: #fff;
+    box-sizing: border-box;
+    >div{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: space-around;
+        margin: 144px 16px 0px 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+
+.topContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: $ColorWhite;
+    .leftContainer{
+        max-width: 560px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rightContainer{
+        max-width: 560px;
+        width: 100%;
+        display: flex;
+    }
+}
+  .footerSocialLinks{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+.logoContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  >span{
+    color: $ColorWhite;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
 }

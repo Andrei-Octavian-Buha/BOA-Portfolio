@@ -30,7 +30,7 @@
                     }
                     </div>
             </div>
-            <div class="rightTopPositionHero">
+            <div class="rightTopPositionHero desktopHero">
                 <img class="heroImg" src="/assets/img/heroImg.png" alt="">
                 <div class="emoticon">
                     <span class="rightTopPositionHeroText">Octavian</span>
@@ -43,21 +43,35 @@
             </div>
         </div>
         <div class="bottomPositionHero">
-                                <div style="display: flex;">
-                    @for(letter of heroText[1].split(''); let i = $index; track i) {
-                        
-                    <h1 (mouseenter)="onHover(letter, i, heroText[1])"
-                        (mouseleave)="onLeave()"
-                        [ngClass]="{
-                            'hover-uppercase': hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'uppercase',
-                            'hover-lowercase':   hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'lowercase'
-                            }">{{ letter }}</h1>
-                    }
-                </div>
+            <div style="display: flex;">
+                @for(letter of heroText[1].split(''); let i = $index; track i) {
+                    
+                <h1 (mouseenter)="onHover(letter, i, heroText[1])"
+                    (mouseleave)="onLeave()"
+                    [ngClass]="{
+                        'hover-uppercase': hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'uppercase',
+                        'hover-lowercase':   hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'lowercase'
+                        }">{{ letter }}</h1>
+                }
+            </div>
+            <div class="btnContainer">
                 <a href="" class="btnKontakt">Get in Touch</a>
+            </div>
+            <div class="imgContainerMobile">
+                <div class="rightTopPositionHero mobileHero">
+                    <img class="heroImg" src="/assets/img/heroImg.png" alt="">
+                    <div class="emoticon">
+                        <span class="rightTopPositionHeroText">Octavian</span>
+                        <div>
+                            <span class="emoticon-show">:)</span>
+                            <span class="emoticon-hover">:D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="position-social-icons">
+    <div class="position-social-icons desktopHero">
         <app-social-icons >  </app-social-icons>
     </div>
 </section>

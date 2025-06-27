@@ -156,10 +156,57 @@
   }
   }
 
+  .arrowAnimation {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 152px;
+    height: auto;
+    z-index: 1;
+    position: relative;
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 70%);
+    mask-size: 300% 100%;
+    mask-position: 0% 0%;
+    mask-repeat: no-repeat;
+    animation: maskMove 2s infinite ease-in-out;
+  }
+}
+
+@keyframes maskMove {
+  0% {
+    mask-position: 0% 0%;
+  }
+  50% {
+    mask-position: 100% 0%;
+  }
+  100% {
+    mask-position: 0% 0%;
+  }
+}
+
 
 .stickerLogo {
   position: absolute;
   top: 0;
   right: 0;
   width: 168px;
+}
+
+.mobile{display: none;}
+
+@media only screen and (max-width: 1220px) {
+  .mobile{display: flex;}
+ .desktop{
+  display: none;
+ }
+ .buttonPosition{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 }
