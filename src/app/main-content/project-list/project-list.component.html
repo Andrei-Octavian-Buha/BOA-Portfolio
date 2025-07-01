@@ -1,1 +1,48 @@
-<p>project-list works!</p>
+
+<app-nav-bar></app-nav-bar>
+<section>
+    <div>
+        <div class="layoutContainer">
+            <div class="navTopContainer">
+                    <a routerLink="/" class="flex gap-[8px]"> <img src="./assets/img/projektBack.png" alt=""> Go Back</a>
+            </div>
+            <div class="contentContainer">
+                <div class="descriptionContainer">
+                    <div>
+                        <h1 class="text-[64px] font-bold">{{project.title}}</h1>
+                    </div>
+                    <div class="flex flex-col gap-[48px]">
+                        <div class="textContainer">
+                            <h3 class="font-bold text-2xl">Description</h3>
+                            <p class="font-normal text-lg">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </p>
+                        </div>
+                        <div class="textContainer">
+                            <h3 class="font-bold text-2xl">Implementation Details</h3>
+                            <p>Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.</p>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <h3 class="font-bold text-lg">Duration:</h3>
+                            <p class="">{{project.duration}} weeks</p>
+                        </div>
+                    </div>
+                    <div class="skillsContainer">
+                        @for (item of project.skills; track $index) {
+                            <img src="/assets/img/icons/{{item.src}}.png" alt="">
+                            <span>{{item.alt}}</span>
+                        }
+                    </div>
+                </div>
+                <div class="projectReviewContainer">
+                    <img src="{{project.img}}" alt="">
+                    <span>
+                        <a class="btnKontakt" href="{{project.gitLink}}">GitHub</a>
+                        <a class="btnKontakt" href="">Live Test</a>
+                    </span>
+                </div>
+            </div>
+            <div class="flex w-full item-center justify-end pr-[72px]">
+                <a class="flex gap-[8px] " href="">Next Project <img   src="./assets/img/nextArrow.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>

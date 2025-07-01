@@ -17,7 +17,7 @@
                         @if($index === hoverIndex){
                             <div class="overlay desktop">
                                 <div style="padding-right: 40px; padding-bottom: 40px;">
-                                    <a class="btnKontakt" href="">Project details</a>
+                                    <a class="btnKontakt" href="" [routerLink]="['/projects', project.id]">Project details</a>
                                 </div>
                             </div>
                         }
@@ -27,7 +27,7 @@
                         <p>{{project.description}}</p>
                             <div class="mobile">
                                 <div style="padding-right: 40px; padding-bottom: 40px;">
-                                    <a class="btnKontakt" href="">Project details</a>
+                                    <a class="btnKontakt" href="" [routerLink]="['/projects', project.id]" >Project details</a>
                                 </div>
                             </div>
                     </div>

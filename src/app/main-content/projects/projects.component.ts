@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { ProjectService } from '../../service/project.service';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -12,23 +14,14 @@ isSmallScreen = window.innerWidth <= 760;
 
 hoverIndex: number | null = null;
 hoverTimeout: any;
-projects = [
-  { 
-    title: 'Join',
-    description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
-    img: '/assets/img/Join.png' 
-  },
-  { 
-    title: 'El Pollo Loco',
-    description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen./',
-    img: '/assets/img/elPolloLoco.png' 
-  },
-  { 
-    title: 'DaBubbleE',
-    description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
-    img: '/assets/img/daBubble.png' 
-  }
-];
+projects: any[] = [];
+
+ constructor(private projectService: ProjectService) {}
+
+
+ngOnInit(): void {
+  this.projects = this.projectService.getProjects();
+}
 
 onMouseEnter(index: number) {
   this.hoverTimeout = setTimeout(() => {
