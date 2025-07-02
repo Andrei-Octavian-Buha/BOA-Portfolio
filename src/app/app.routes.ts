@@ -6,7 +6,7 @@ export const routes: Routes = [
         component: MainContentComponent,
         title: 'Home - BOA Portfolio',
         },
-            {   path: 'projects/:id', 
+        {   path: 'projects/:id', 
         component: ProjectListComponent,
         title: 'Home - BOA Portfolio',
         },

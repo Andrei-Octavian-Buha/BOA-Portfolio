@@ -13,6 +13,7 @@ import { RouterModule} from '@angular/router';
 export class ProjectListComponent {
 
   project: any;
+  nextProjectId: string = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -20,7 +21,15 @@ export class ProjectListComponent {
   ) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.project = this.projectService.getProjectById(id!);
+    this.route.paramMap.subscribe(paramMap => {
+      const id = paramMap.get('id');
+      if (id !== null) {
+        this.project = this.projectService.getProjectById(id);
+        this.nextProjectId = this.projectService.getNextProjectId(id);
+      } else {
+        this.project = null;
+        this.nextProjectId = '';
+      }
+    });
   }
 }

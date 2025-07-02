@@ -207,7 +207,7 @@ section{
   rotate: 8deg;
   .emoticon{
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
     display: flex;
     gap: 10px;
   }
@@ -279,7 +279,52 @@ h1{
   margin: 0;
 }
 
-
+.rightTopPositionHero{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  rotate: 8deg;
+  .emoticon{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .rightTopPositionHeroText{
+  font-family: 'Kalam', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
+  .emoticon-show{
+  font-family: 'Kalam', sans-serif;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
+  .emoticon-hover{
+    display: none;
+  }
+  &:hover .emoticon-show{
+    display: none;
+  }
+  &:hover .emoticon-hover{
+  font-family: 'Kalam', sans-serif;
+    display: flex;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    color:#0E1013;
+  }
+  filter: grayscale(100%);
+  &:hover{
+    filter: grayscale(0%);
+    transition: all 0.3s ease;
+  }
+}
 .paddingSection{
   display: flex;
   flex-direction: column;
@@ -320,7 +365,12 @@ h1{
 .mobileHero{
   display: flex;
 }
-
+  .emoticon{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+  }
 .desktopHero{
   display: none;
 }
@@ -335,4 +385,5 @@ h1{
   color: $ColorWhite;
   margin: 0;
 }
+
 }
