@@ -6,20 +6,20 @@
             <div class="hidden lg:flex w-full pl-[72px] items-start">
                     <a routerLink="/" class="flex gap-[8px] text-lg font-bold text-[#0E1013] hover:text-[#F87A55]"> <img src="./assets/img/projektBack.png" alt=""> Go Back</a>
             </div>
-            <div class="contentContainer ">
-                <div class="descriptionContainer">
+            <div class="flex flex-col gap-[40px] lg:flex-row">
+                <div class="flex flex-col gap-[32px] max-w-[488px] ">
                     <div class="flex flex-col w-full">
-                        <h1 class="text-[64px] font-bold">{{project.title}}</h1>
+                        <h1 class="text-[48px] font-bold lg:text-[64px]">{{project.title}}</h1>
                         <div class="arrowAnimation">
                             <img src="/assets/img/arrowProject.png" alt="">
                         </div>
                     </div>
                     <div class="flex flex-col gap-[48px]">
-                        <div class="textContainer">
+                        <div class="flex flex-col gap-[16px]">
                             <h3 class="font-bold text-2xl">Description</h3>
                             <p class="font-normal text-lg">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </p>
                         </div>
-                        <div class="textContainer">
+                        <div class="flex flex-col gap-[16px]">
                             <h3 class="font-bold text-2xl">Implementation Details</h3>
                             <p>Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.</p>
                         </div>
@@ -35,27 +35,37 @@
                         }
                     </div>
                 </div>
-                <div class="projectReviewContainer">
-
-                    <div class="flex relative items-center  max-w-[560px]">
-                        <img class="md:max-w-[560px]" src="{{project.imgBg}}" alt="">
+                <div class="projectReviewContainer flex flex-col items-center gap-[48px]">
+                    <div class="flex relative items-center ">
+                        <img class="max-w-[288px] sm:max-w-[560px]" src="{{project.imgBg}}" alt="">
                         @if(project.logo && !project.feauterd){
-                            <img class="hidden  lg:flex absolute -right-[48px] top-1/2 -translate-y-1/2 w-[120px]" src="/assets/img/stickerFd.png" alt="">
+                            <img class="hidden  xl:flex absolute -right-[48px] top-1/2 -translate-y-1/2 w-[120px]" src="/assets/img/stickerFd.png" alt="">
                         }
                         @if(project.featured && !project.logo){
-                             <img class="hidden lg:flex absolute -right-[48px] top-1/2 -translate-y-1/2 w-[120px]" src="/assets/img/featured.png" alt="">
+                             <img class="hidden xl:flex absolute -right-[48px] top-1/2 -translate-y-1/2 w-[120px]" src="/assets/img/featured.png" alt="">
                         }
                     </div>
-
                     <span >
-                        <a class="btnKontakt" href="{{project.gitLink}}">GitHub</a>
-                        <a class="btnKontakt" href="">Live Test</a>
+                        <a class="btnKontakt w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
+                        shadow-[2px_4px_0px_0px_#F8F9FA] 
+                        sm:border-black
+                        sm:shadow-[2px_4px_0px_0px_#0E1013] 
+                        lg:border-white 
+                        lg:shadow-[2px_4px_0px_0px_#F8F9FA]" 
+                        href="{{project.gitLink}}">GitHub</a>
+                        <a class="btnKontakt w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
+                        shadow-[2px_4px_0px_0px_#F8F9FA] 
+                        sm:border-black
+                        sm:shadow-[2px_4px_0px_0px_#0E1013]
+                        lg:border-white 
+                        lg:shadow-[2px_4px_0px_0px_#F8F9FA]"
+                          href="">Live Test</a>
                     </span>
                 </div>
             </div>
-            <div class="flex px-[16px] w-full items-center justify-between  lg:justify-end lg:px-[72px]">
-                <a routerLink="/" class="flex lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA]  hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> Go Back</a>
-                <a class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold hover:text-yellow-400" [routerLink]="['/projects', nextProjectId]" >Next Project <img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
+            <div class="flex  w-full items-center justify-between  lg:justify-end lg:px-[72px]">
+                <a routerLink="/" class="flex lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA] sm:text-[#0E1013] hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> Go Back</a>
+                <a class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold sm:text-[#0E1013] lg:text-[#F8F9FA] hover:text-yellow-400" [routerLink]="['/projects', nextProjectId]" >Next Project <img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
             </div>
         </div>
     </div>

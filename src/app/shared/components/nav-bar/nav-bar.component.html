@@ -1,7 +1,8 @@
 <section>
-    <div >
+    <div class="flex items-center justify-between max-w-[1440px] w-full" >
         <app-logo></app-logo>
-        <div style="width: 100%;">
+
+        <div class="hidden lg:block" style="width: 100%;">
             <ul class="navLinks">
                 <li class="aboutmebtn-element">
                     <a    href="#about-me">About Me</a>
@@ -17,7 +18,8 @@
                 </li>
             </ul>
         </div>
-        <div>
+
+        <div class="hidden lg:block">
             <div class="language-toggle">
                 <button class="languageBtn"  (click)="switchLanguage('en')" [class.active]="selectedLang === 'en'">EN</button>
 
@@ -28,5 +30,24 @@
                 <button class="languageBtn" (click)="switchLanguage('de')" [class.active]="selectedLang === 'de'">DE</button>
             </div>
         </div>
+
+        <button (click)="openMenu()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        </div>
+
+       <!-- Meniul mobil -->
+    <div [ngClass]="{ 'hidden': !isMenuOpen, 'flex': isMenuOpen }">
+        <ul>
+            <li (click)="closeMenu()"><a href="#about-me">About Me</a></li>
+            <li (click)="closeMenu()"><a href="#skills">Skills</a></li>
+            <li (click)="closeMenu()"><a href="#projects">Projects</a></li>
+            <li (click)="closeMenu()"><a href="#footer">Contact</a></li>
+            <li class="language-toggle-mobile">
+                <button (click)="switchLanguage('en'); closeMenu()" [class.active]="selectedLang === 'en'">EN</button>
+                <button (click)="switchLanguage('de'); closeMenu()" [class.active]="selectedLang === 'de'">DE</button>
+            </li>
+        </ul>
     </div>
+
 </section>
