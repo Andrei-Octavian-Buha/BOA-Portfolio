@@ -6,7 +6,7 @@ section{
     background-image: url('/assets/img/footerbg.png');
     background-size: cover;
     background-position: top;
-    background-color: #fff;
+    background-color: $ColorWhite;
     box-sizing: border-box;
     >div{
         max-width: 1440px;
@@ -245,7 +245,7 @@ section{
     background-image: url('/assets/img/footerbg.png');
     background-size: cover;
     background-position: top;
-    background-color: #fff;
+    background-color: $ColorWhite;
     box-sizing: border-box;
     >div{
         max-width: 1440px;

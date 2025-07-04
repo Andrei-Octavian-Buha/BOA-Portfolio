@@ -176,7 +176,7 @@ section{
 
 @media (max-width: 896px) {
   section{
-    background-color: #FFF;
+    background-color: $ColorWhite;
     display: flex;
     padding-top: 144px;
     justify-content: center;
@@ -190,7 +190,7 @@ section{
   }
 
   .paperStrip {
-    width: 343px;
+    max-width: 250px;
     height: 128px;
     display: flex;
     align-items: center;

@@ -1,7 +1,7 @@
 // @import url('./../../../styles.scss');
 @use './../../../styles.scss' as *;
 section{
-    background-color: #fff;
+    background-color: $ColorWhite;
     display: flex;
     justify-content: center;
     >div{
@@ -181,7 +181,7 @@ section{
   }
 
   section{
-    background-color: $bgColor;
+    background-color: $ColorWhite;
     display: flex;
     justify-content: center;
     >div{

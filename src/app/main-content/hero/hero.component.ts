@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SocialIconsComponent } from "../../shared/components/social-icons/social-icons.component";
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateModule} from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-hero',
@@ -17,6 +17,11 @@ isHovered: boolean = false;
 hoveredIndex: number | null = null;
 hoveredCase: 'uppercase' | 'lowercase' | null = null;
 hoveredSource: string | null = null;
+
+
+constructor() {
+}
+
 
 onHover(letter: string , index: number , source: string) {
   this.hoveredCase = letter === letter.toUpperCase() ? 'uppercase' : 'lowercase';

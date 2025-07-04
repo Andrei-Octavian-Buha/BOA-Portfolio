@@ -5,7 +5,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    padding: 16px 16px;
 }
 
 .logo{
@@ -230,4 +230,28 @@ li{
     left: 0;
     background-color: #3355FF;
     border: 1px solid #F8F9FA
+}
+
+.backgroundImgMobile{
+  width: 100%;
+  background-image: url('/assets/img/herobg.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.focus-openMenu {
+  &:active {
+    background-image: url('/assets/img/nav/openMenu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.focus-closeMenu {
+  &:active {
+    background-image: url('/assets/img/nav/closeMenu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
