@@ -180,21 +180,25 @@ section{
     display: none;
   }
 
-  section{
+section{
     background-color: $ColorWhite;
     display: flex;
     justify-content: center;
+
     >div{
       box-sizing: border-box;
-        width: 100%;
-        max-width: 1440px;
-        display: flex;
-        justify-content: center;
-        padding-left: 16px;
-        padding-right: 16px;
+      width: 100%;
+      max-width: 1440px;
+      display: flex;
+      justify-content: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-left: 0;
+      margin-right: 0;
     }
 }
-  .projectCard{
+
+.projectCard{
   width: 100%;
   max-width: 560px;
   display: flex;
@@ -211,7 +215,7 @@ section{
   max-height: 400px;
   display: flex;
   align-items: center;
-    border-radius: 20px 20px 20px 20px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 

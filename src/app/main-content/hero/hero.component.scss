@@ -1,13 +1,5 @@
 @use './../../../styles.scss' as *;
-h1{
-  font-size: 128px;
-  font-weight: 700;
-  color: $ColorWhite;
-  margin: 0;
-}
-h2{
-  color: $ColorWhite;
-}
+
 
 section{
     position: relative;
@@ -22,7 +14,19 @@ section{
     background-image: url('/assets/img/herobg.png');
     background-size: cover;
     background-position: bottom;
-  }
+}
+
+h1{
+  font-size: 128px;
+  font-weight: 700;
+  color: $ColorWhite;
+  margin: 0;
+}
+
+h2{
+  color: $ColorWhite;
+}
+
 
 .paddingSection{
   display: flex;
