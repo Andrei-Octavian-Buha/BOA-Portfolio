@@ -13,7 +13,8 @@
             @for(project of projects; track $index) {
                 <div class="projectCard" (mouseenter)="onMouseEnter($index)"  (mouseleave)="onMouseLeave()">
                     <div class="imgContainer">
-                        <img  [class.zoomed]="hoverIndex === $index" [class.move-down-img]="$index === 0 && hoverIndex !== 0" class="imgProjects" src="{{project.img}}" alt="">
+                        <img  [class.zoomed]="hoverIndex === $index" [class.move-down-img]="$index === 0 && hoverIndex !== 0" 
+                        class="imgProjects" src="{{project.img}}" alt="">
                         @if($index === hoverIndex){
                             <div class="overlay desktop">
                                 <div style="padding-right: 40px; padding-bottom: 40px;">
