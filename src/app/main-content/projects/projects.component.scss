@@ -4,6 +4,7 @@ section{
     background-color: $ColorWhite;
     display: flex;
     justify-content: center;
+        font-family: 'Bricolage Grotesque', sans-serif !important;
     >div{
         width: 100%;
         max-width: 1440px;
@@ -135,18 +136,21 @@ section{
   }
 
 @media only screen and (max-width: 1220px) {
-.projects{
-    display: flex;
-    flex-direction: column;
-}
+  .projects{
+      display: flex;
+      flex-direction: column;
+      gap:40px
+  }
+
   .mobile{
     display: flex;
     justify-content: flex-end;
   }
+
   .desktop{
     display: none;
   }
-    .btnKontakt{
+  .btnKontakt{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,8 +174,9 @@ section{
       box-shadow: none;
       transform: translate(2px, 4px); 
       }
-    }
+  }
 }
+
 @media (max-width: 887px) {
   .mobile{
     display: flex;
@@ -180,43 +185,43 @@ section{
     display: none;
   }
 
-section{
-    background-color: $ColorWhite;
-    display: flex;
-    justify-content: center;
-
-    >div{
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 1440px;
+  section{
+      background-color: $ColorWhite;
       display: flex;
       justify-content: center;
-      padding-left: 16px;
-      padding-right: 16px;
-      margin-left: 0;
-      margin-right: 0;
-    }
-}
 
-.projectCard{
-  width: 100%;
-  max-width: 560px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  gap: 10px;
-}
+      >div{
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+  }
 
-.imgContainer{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  max-height: 400px;
-  display: flex;
-  align-items: center;
-  border-radius: 20px 20px 20px 20px;
-}
+  .projectCard{
+    width: 100%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 32px;
+  }
+
+  .imgContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+  }
 
 
 }

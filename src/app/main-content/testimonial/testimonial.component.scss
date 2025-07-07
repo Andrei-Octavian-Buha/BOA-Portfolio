@@ -3,6 +3,7 @@ section{
     background-color: $ColorWhite;
     display: flex;
     justify-content: center;
+        font-family: 'Bricolage Grotesque', sans-serif !important;
     >div{
         width: 100%;
         max-width: 1440px;
@@ -262,8 +263,8 @@ section{
     >div{
         width: 100%;
         max-width: 1440px;
-        padding-top: 144px;
-        padding-bottom: 144px;
+        padding-top: 88px;
+        padding-bottom: 88px;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -278,7 +279,7 @@ h2{
     box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
-    gap: 120px;
+    gap: 32px;
     width: 100%;
     padding: 0 16px;
 }

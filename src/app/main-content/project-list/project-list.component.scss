@@ -146,3 +146,26 @@ section{
 }
 
 }
+
+
+@media only screen and (max-width: 1024px){
+.btnKontakt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  max-height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 0px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #F87A55;
+    box-shadow: none;
+    transform: translate(2px, 4px); 
+  }
+}
+}

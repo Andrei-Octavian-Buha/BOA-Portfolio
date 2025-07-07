@@ -46,26 +46,26 @@
                         }
                     </div>
                     <span >
-                        <a class="btnKontakt w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
+                        <a class="w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
                         shadow-[2px_4px_0px_0px_#F8F9FA] 
                         sm:border-black
                         sm:shadow-[2px_4px_0px_0px_#0E1013] 
                         lg:border-white 
-                        lg:shadow-[2px_4px_0px_0px_#F8F9FA]" 
+                        lg:shadow-[2px_4px_0px_0px_#F8F9FA] btnKontakt" 
                         href="{{project.gitLink}}">GitHub</a>
-                        <a class="btnKontakt w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
+                        <a class=" w-[122px] text-[#F8F9FA]  sm:text-[#0E1013] lg:text-[#F8F9FA] md:w-[154px] border border-white 
                         shadow-[2px_4px_0px_0px_#F8F9FA] 
                         sm:border-black
                         sm:shadow-[2px_4px_0px_0px_#0E1013]
                         lg:border-white 
-                        lg:shadow-[2px_4px_0px_0px_#F8F9FA]"
+                        lg:shadow-[2px_4px_0px_0px_#F8F9FA] btnKontakt"
                           href="">Live Test</a>
                     </span>
                 </div>
             </div>
             <div class="flex  w-full items-center justify-between  lg:justify-end lg:px-[72px]">
-                <a routerLink="/" class="flex lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA] sm:text-[#0E1013] hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> Go Back</a>
-                <a class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold sm:text-[#0E1013] lg:text-[#F8F9FA] hover:text-yellow-400" [routerLink]="['/projects', nextProjectId]" >Next Project <img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
+                <a routerLink="/" class="flex  lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA] sm:text-[#0E1013] hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> Go Back</a>
+                <a [routerLink]="['/projects', nextProjectId]"  class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold sm:text-[#0E1013] lg:text-[#F8F9FA] hover:text-yellow-400" >Next Project <img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
             </div>
         </div>
     </div>
