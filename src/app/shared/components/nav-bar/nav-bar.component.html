@@ -36,41 +36,41 @@
         </div>
 
        <!-- Meniul mobil -->
-    <div [ngClass]="{ 'hidden': !isMenuOpen, 'flex': isMenuOpen }"
-            class="fixed z-[9999] flex-col left-0 top-0  gap-[64px] w-full h-screen   backgroundImgMobile ">
-        <div class="flex p-[16px] justify-between">
-            <app-logo></app-logo>
-            <button (click)="closeMenu()" class="flex items-center justify-center text-[#F8F9FA] active:text-[#3355FF]  w-[32px] h-[32px] focus-closeMenu">
-                <mat-icon class="text-white text-lg">close</mat-icon>
-            </button>
-        </div>
-        <ul class="flex w-full flex-col items-center justify-between">
-            <li class="aboutmebtn-element" (click)="closeMenu()">
-                <a href="#about-me">About Me</a>
-            </li>
-            <li class="skillsbtn-element" (click)="closeMenu()">
-                <a href="#skills">Skills</a>
-            </li>
-            <li class="projectsbtn-element" (click)="closeMenu()">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="contactbtn-element" (click)="closeMenu()">
-                <a href="#footer">Contact</a>
-            </li>
-            <li class="language-toggle-mobile">
-            <div class="language-toggle">
-                <button class="languageBtn"  (click)="switchLanguage('en')" [class.active]="selectedLang === 'en'">EN</button>
-                <div class="slider">
-                    <span class="sliderIn"></span>
-                    <span class="sliderOut" [ngStyle]="{ left: selectedLang === 'en' ? '0' : '50%' }"></span>
-                </div>
-                <button class="languageBtn" (click)="switchLanguage('de')" [class.active]="selectedLang === 'de'">DE</button>
+            <div   *ngIf="isMenuOpen"
+                @menuAnimation
+                class="fixed z-[9999] flex-col left-0 top-0  gap-[64px] w-full backgroundImgMobile">
+                    <div class="flex p-[16px] justify-between">
+                        <app-logo></app-logo>
+                        <button (click)="closeMenu()" class="flex items-center justify-center text-[#F8F9FA] active:text-[#3355FF]  w-[32px] h-[32px] focus-closeMenu">
+                            <mat-icon class="text-white text-lg">close</mat-icon>
+                        </button>
+                    </div>
+                    <ul class="flex w-full flex-col items-center justify-between">
+                        <li class="aboutmebtn-element" (click)="closeMenu()">
+                            <a href="#about-me">About Me</a>
+                        </li>
+                        <li class="skillsbtn-element" (click)="closeMenu()">
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li class="projectsbtn-element" (click)="closeMenu()">
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li class="contactbtn-element" (click)="closeMenu()">
+                            <a href="#footer">Contact</a>
+                        </li>
+                        <li class="language-toggle-mobile">
+                        <div class="language-toggle">
+                            <button class="languageBtn"  (click)="switchLanguage('en')" [class.active]="selectedLang === 'en'">EN</button>
+                            <div class="slider">
+                                <span class="sliderIn"></span>
+                                <span class="sliderOut" [ngStyle]="{ left: selectedLang === 'en' ? '0' : '50%' }"></span>
+                            </div>
+                            <button class="languageBtn" (click)="switchLanguage('de')" [class.active]="selectedLang === 'de'">DE</button>
+                        </div>
+                        </li>
+                    </ul>
+                    <div class="flex w-full items-center justify-center">
+                        <app-social-icons customClass="flex flex-row gap-[8px]" >  </app-social-icons>
+                    </div>
             </div>
-            </li>
-        </ul>
-        <div class="flex w-full items-center justify-center">
-            <app-social-icons customClass="flex flex-row gap-[8px]" >  </app-social-icons>
-        </div>
-    </div>
-
 </section>

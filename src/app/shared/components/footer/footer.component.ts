@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContactFormComponent } from "../contact-form/contact-form.component";
 import { LogoComponent } from "../logo/logo.component";
+import { RouterModule} from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
-  imports: [CommonModule, ContactFormComponent, LogoComponent],
+  imports: [CommonModule, ContactFormComponent, LogoComponent, RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -20,4 +22,6 @@ export class FooterComponent {
 
     {label:'Email', 
       imgSrc: 'mailImg.png'}];
+
+      constructor(    private route: ActivatedRoute,) { }
 }

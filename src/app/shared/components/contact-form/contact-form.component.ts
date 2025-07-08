@@ -11,18 +11,20 @@ import { ContactPerson } from '../../models/contactPerson.component';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
-  skills = ['Method Acting', 'Singing', 'Dancing', 'Swordfighting'];
   model = new ContactPerson ("","","", false); ;
   submitted = false;
   showFirstNameError = false;
   showEmailError = false;
+  showTextError = false;
 
   onInputBlur(name: NgModel) {
     if (name.invalid) {
       if (name.name === 'firstName') {
-        this.showFirstNameError = true; // Show error for first name
+        this.showFirstNameError = true;
       } else if (name.name === 'email') {
-        this.showEmailError = true; // Show error for email
+        this.showEmailError = true; 
+      }else if (name.name === 'text') {
+        this.showTextError = true; 
       }
     }
   }

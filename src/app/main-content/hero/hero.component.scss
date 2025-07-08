@@ -29,10 +29,6 @@ h2{
 
 
 .paddingSection{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   max-width: 864px;
   max-height: 489px;
@@ -69,7 +65,6 @@ h2{
 }
 
 .topPositionHero{
-
   display: flex;
   justify-content: space-between;
   gap: 61px;
@@ -208,7 +203,7 @@ h2{
   rotate: 8deg;
   .emoticon{
     position: absolute;
-    bottom: 70px;
+    bottom: 10px;
     display: flex;
     gap: 10px;
   }
@@ -276,7 +271,7 @@ h2{
 
 @media (max-width: 896px) {
 h1{
-  font-size: 64px;
+  font-size: 96px;
   font-weight: 700;
   color: $ColorWhite;
   margin: 0;
@@ -293,6 +288,7 @@ h1{
     display: flex;
     gap: 10px;
   }
+
   .rightTopPositionHeroText{
   font-family: 'Kalam', sans-serif;
     font-size: 24px;
@@ -300,6 +296,7 @@ h1{
     line-height: 120%;
     color:#0E1013;
   }
+
   .emoticon-show{
   font-family: 'Kalam', sans-serif;
     display: flex;
@@ -308,12 +305,15 @@ h1{
     line-height: 120%;
     color:#0E1013;
   }
+
   .emoticon-hover{
     display: none;
   }
+
   &:hover .emoticon-show{
     display: none;
   }
+
   &:hover .emoticon-hover{
   font-family: 'Kalam', sans-serif;
     display: flex;
@@ -322,6 +322,7 @@ h1{
     line-height: 120%;
     color:#0E1013;
   }
+
   filter: grayscale(100%);
   &:hover{
     filter: grayscale(0%);
@@ -330,10 +331,6 @@ h1{
 }
 
 .paddingSection{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
   width: 100%;
   max-width: 864px;
   max-height: 489px;
@@ -351,29 +348,30 @@ h1{
   justify-content: end;
 }
 
-.btnContainer{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  text-decoration: none;
-}
-
-.imgContainerMobile{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-  .emoticon{
+.emoticon{
     position: absolute;
     bottom: 10px;
     display: flex;
     gap: 10px;
   }
+}
 
+@media (max-width: 768px) {
+section{
+    position: relative;
+    z-index: 2;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    background-color: $ColorWhite;
+    background-image: url('/assets/img/herobg.png');
+    background-size: cover;
+    background-position: bottom;
+    padding-top: 97px;
+}
   .mobileHero{
   display: flex;
 }
@@ -382,12 +380,16 @@ h1{
   display: none;
 }
 
-}
-
-@media (max-width: 768px) {
   .socialIconsDesktopHero{
     display: none;
   }
+
+  h1{
+  font-size: 64px;
+  font-weight: 700;
+  color: $ColorWhite;
+  margin: 0;
+}
 
 }
 

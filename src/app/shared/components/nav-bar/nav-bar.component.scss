@@ -233,11 +233,13 @@ li{
     border: 1px solid #F8F9FA
 }
 
-.backgroundImgMobile{
-  width: 100%;
+.backgroundImgMobile {
   background-image: url('/assets/img/herobg.png');
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover; 
+  height: 100vh;
+
 }
 
 .focus-openMenu {

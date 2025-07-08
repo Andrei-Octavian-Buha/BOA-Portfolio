@@ -59,9 +59,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
-
 
     &::after {
         content: "";
@@ -76,35 +74,28 @@ h2{
         background-image: url('/assets/img/skillHover.png');
         transform-origin: top right;
         z-index: 1;
+        clip-path: inset(0 0 0 0);
         animation: revealMask 3s ease-in-out infinite;
       }
 }
 
 @keyframes revealMask {
-    0% {
-      width: 0;
-      transform: rotate(-50deg);
-      opacity: 1;
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+    50% {
+        clip-path: inset(0 0 0 0);
     }
-    10% {
-        right: 0;
-      width: 100%;
-      transform: rotate(0deg);
-      opacity: 1;
+    75% {
+    clip-path: inset(0 0 0 0);
     }
-    90% {
-        top: 0;
-        right: 0;
-        width: 100%;
-        transform: rotate(0deg);
-        opacity: 1;
-      }
-    100% {
-      width: 0;
-      transform: rotate(-180deg);
-      opacity: 0;
-    }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
 }
+
+
+
 .bottomContainer{
     display: flex;
     align-items: center;

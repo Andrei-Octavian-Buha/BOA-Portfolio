@@ -7,16 +7,36 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SocialIconsComponent } from "../social-icons/social-icons.component";
+import {
+  trigger,
+  transition,
+  style,
+  animate,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-nav-bar',
   imports: [CommonModule, MatSlideToggleModule, MatToolbarModule, MatButtonModule, MatIconModule, SocialIconsComponent, LogoComponent],
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.scss'
+  styleUrl: './nav-bar.component.scss',
+  animations: [
+    trigger('menuAnimation', [
+      transition(':enter', [
+        style({ height: '0', opacity: 0 }),
+        animate('500ms ease-out', style({ height: '100vh', opacity: 1})),
+      ]),
+      transition(':leave', [
+        animate('500ms ease-in', style({ height: '0', opacity: 0 })),
+      ]),
+    ])
+  ]
+
 })
+
 export class NavBarComponent {
     selectedLang = 'en';
     isMenuOpen = false;
+
 
 
   constructor(private translate: TranslateService) {
@@ -31,19 +51,19 @@ export class NavBarComponent {
     localStorage.setItem('lang', lang);
   }
 
-  openMenu(){
+  openMenu() {
     this.isMenuOpen = true;
-    document.body.style.overflow = 'hidden';
+    document.body.classList.add('no-scroll');
   }
 
-   toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-    document.body.style.overflow = this.isMenuOpen ? 'hidden' : '';
-  }
-
-  closeMenu(): void {
+  closeMenu() {
     this.isMenuOpen = false;
-    document.body.style.overflow = 'auto';
+    document.body.classList.remove('no-scroll');
+  }
+
+  // Just in case user navigates away or component is destroyed
+  ngOnDestroy(): void {
+    document.body.classList.remove('no-scroll');
   }
 }
 
