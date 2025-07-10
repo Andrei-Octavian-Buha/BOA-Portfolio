@@ -28,6 +28,7 @@ onHover(letter: string , index: number , source: string) {
   this.hoveredIndex = index;
   this.hoveredSource = source;
 }
+
 onLeave() {
   this.hoveredIndex = null;
   this.hoveredCase = null;

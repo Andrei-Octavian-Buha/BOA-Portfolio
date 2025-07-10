@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
                 <label for="textContact" class="labelStyle">How can I help you ?</label>
-                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="Your text"  name="text" minlength="10" [(ngModel)]="model.text" name="text" required #text="ngModel">
+                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="Your text"  minlength="10" [(ngModel)]="model.text" name="text" required #text="ngModel">
                 @if (showTextError) {
                     <div class="alertError" (click)="showTextError = false">
                         <p>What do you need to develop?</p>
@@ -41,9 +41,9 @@
                 </label>
             </div>
             @if(checkbox.invalid) {
-            <div class="alert alert-danger">
-                You must agree to the terms and conditions
-            </div>
+                <div class="alert alert-danger">
+                    You must agree to the terms and conditions
+                </div>
             }
             <div class="buttonPosition">
                 <div class="arrowAnimation mobile">

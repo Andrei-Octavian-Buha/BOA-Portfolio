@@ -26,10 +26,11 @@ export class TestimonialComponent {
       card: 1,
     },
     {
-      name: 'Jane Smith',
-      job: 'Web designer',
-      feedback: 'It was a great pleasure to work with Karl. He knows how to push and encourage team members to present the best work possible, always adding something to brainstorm. Regarding the well-being of group members, he was always present and available to listen and help others, with a great sense of humor as well.',
-      date: '2023-10-02',
+      name: 'Enes Geldi',
+      job: 'Web Developer',
+      feedback: 'Er war während des gesamten Projekts sehr freundlich, hilfsbereit und kooperativ. Besonders positiv aufgefallen ist mir seine zuverlässige und engagierte Arbeitsweise – er war immer motiviert und hat seine Aufgaben gewissenhaft übernommen. Ich würde mich freuen, in Zukunft wieder mit ihm an Projekten zu arbeiten.',
+      date: '2023-07-01',
+      link: 'https://github.com/EnesG-Dev',
       bg: 1,
       card: 2
     },

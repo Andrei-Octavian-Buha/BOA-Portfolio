@@ -2,20 +2,25 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { ContactPerson } from '../../models/contactPerson.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from '../../../service/contact.service';
 
 
 @Component({
   selector: 'app-contact-form',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule , HttpClientModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+
   model = new ContactPerson ("","","", false); ;
   submitted = false;
   showFirstNameError = false;
   showEmailError = false;
   showTextError = false;
+
+  constructor(private contactService: ContactService) {}  
 
   onInputBlur(name: NgModel) {
     if (name.invalid) {
@@ -30,22 +35,24 @@ export class ContactFormComponent {
   }
 
 
-  onSubmit(contactPerson : NgForm) {
-    if (this.model.firstName === '') {
-          console.log('"First name is required."');
-    }else if (this.model.email === '') {
-          console.log('"Email is required."');
-    }else {
-      console.log('Form is valid. Proceeding with submission.');
-      // Here you can handle the form submission, e.g., send it to a server
-      // For now, we just log the model to the console
-      console.log('Submitted Contact Person:', this.model);
-          this.model.agree = true; 
-      this.submitted = true;
-      this.resetForm(contactPerson);
+    onSubmit(contactPerson: NgForm) {
+      if (!contactPerson.valid) {
+        console.log("Form is invalid.");
+        return;
+      }
+
+      this.contactService.sendForm(this.model).subscribe({
+        next: (res) => {
+          console.log('✅ Email sent successfully!', res);
+          this.submitted = true;
+          this.resetForm(contactPerson);
+        },
+        error: (err) => {
+          console.error('❌ Error sending email:', err);
+        }
+      });
     }
 
-  }
     resetForm(form: NgForm) {
       form.reset(); // Resets form controls (valid, touched, dirty)
       // this.model = {    // Clear model data

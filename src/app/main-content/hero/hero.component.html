@@ -15,7 +15,7 @@
                             (mouseenter)="isHovered = true"
                             (mouseleave)="isHovered = false"
                         >
-                            {{ isHovered ? ('INTRO' | translate) : "Hello World" }}
+                            {{ isHovered ? ('INTRO' | translate) : ('HELLO' | translate)}}
                         </a>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                 }
             </div>
             <div class="flex justify-end w-full">
-                <a href="#footer" class="btnKontakt">Get in Touch</a>
+                <a href="#footer" class="btnKontakt">{{('KONTAKT' | translate )}}</a>
             </div>
             <div class="mobileHero">
                 <div class="rightTopPositionHero ">

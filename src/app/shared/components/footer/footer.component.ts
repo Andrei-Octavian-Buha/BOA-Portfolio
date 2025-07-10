@@ -16,12 +16,15 @@ export class FooterComponent {
   hoveredIndex: number | null = null;
   socialLinks = [
     {label:'GitHub', 
-    imgSrc: 'gitImg.png'},
+    imgSrc: 'gitImg.png',
+    link: 'https://github.com/Andrei-Octavian-Buha'},
     {label:'LinkedIn', 
-    imgSrc: 'linkImg.png'},
+    imgSrc: 'linkImg.png',
+      link: 'https://www.linkedin.com/in/andrei-octavian-buha-27a0362ba/'},
 
     {label:'Email', 
-      imgSrc: 'mailImg.png'}];
+      imgSrc: 'mailImg.png',
+      link: 'mailto:andrei.buha@patrazel.dev'}];
 
       constructor(    private route: ActivatedRoute,) { }
 }
