@@ -1,77 +1,82 @@
 <section>
-    <div class="paddingSection">
-        <div class="flex flex-col items-center justify-center md:flex-row md:justify-between md:gap-[61px]">
-            <div class="leftTopPositionHero items-center md:items-start">
-                <div class="containerButton" >
-                    <div class="hover-container justify-center md:justify-start">
-                        <img
-                            [ngClass]="isHovered ? 'rotateMoveAnimation' : 'rotateMoveAnimationOut'"
-                            src="/assets/img/social/wavingHand.png"
-                            alt=""
-                        />
-                        <a
-                            class="btn"
-                            [ngClass]="{ 'btn-hover': isHovered, 'btn-show': !isHovered }"
-                            (mouseenter)="isHovered = true"
-                            (mouseleave)="isHovered = false"
-                        >
-                            {{ isHovered ? ('INTRO' | translate) : ('HELLO' | translate)}}
-                        </a>
+    <div class="herolayout">
+        <div class="flex flex-col items-center m-w-[864px]">
+            <div class="flex flex-col items-center  justify-center md:flex-row md:justify-between md:gap-[61px] pr-[16px]">
+                <div class="leftTopPositionHero items-start">
+                    <div class="containerButton" >
+                        <div class="hover-container justify-start md:justify-start">
+                            <img
+                                [ngClass]="isHovered ? 'rotateMoveAnimation' : 'rotateMoveAnimationOut'"
+                                src="/assets/img/social/wavingHand.png"
+                                alt=""
+                            />
+                            <a
+
+                                [ngClass]="{ 'btn-hover': isHovered, 'btn-show': !isHovered }"
+                                (mouseenter)="isHovered = true"
+                                (mouseleave)="isHovered = false"
+                            >
+                                {{ isHovered ? ('INTRO' | translate) : ('HELLO' | translate)}}
+                            </a>
+                        </div>
                     </div>
+                    <div style="display: flex;">
+                        @for(letter of heroText[0].split(''); let i = $index; track i ) {
+                        <h1 (mouseenter)="onHover(letter, i, heroText[0])"
+                            (mouseleave)="onLeave()"
+                            [ngClass]="{
+                                'hover-uppercase': hoveredSource === heroText[0] && hoveredIndex === i && hoveredCase === 'uppercase',
+                                'hover-lowercase': hoveredSource === heroText[0] &&  hoveredIndex === i && hoveredCase === 'lowercase'
+                                }"
+                                >{{ letter }}</h1>
+                        }
+                        </div>
                 </div>
-                <div style="display: flex;">
-                    @for(letter of heroText[0].split(''); let i = $index; track i ) {
-                    <h1 (mouseenter)="onHover(letter, i, heroText[0])"
-                        (mouseleave)="onLeave()"
-                        [ngClass]="{
-                            'hover-uppercase': hoveredSource === heroText[0] && hoveredIndex === i && hoveredCase === 'uppercase',
-                            'hover-lowercase': hoveredSource === heroText[0] &&  hoveredIndex === i && hoveredCase === 'lowercase'
-                            }">{{ letter }}</h1>
-                    }
-                    </div>
-            </div>
-            <div class="rightTopPositionHero desktopHero">
-                <img class="heroImg" src="/assets/img/heroImg.png" alt="">
-                <div class="emoticon">
-                    <span class="rightTopPositionHeroText">Octavian</span>
-                    <div>
-                        <span class="emoticon-show">:)</span>
-                        <span class="emoticon-hover">:D</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="flex flex-col items-center  w-full gap-[32px]">
-            <div style="display: flex;">
-                @for(letter of heroText[1].split(''); let i = $index; track i) {
-                    
-                <h1 (mouseenter)="onHover(letter, i, heroText[1])"
-                    (mouseleave)="onLeave()"
-                    [ngClass]="{
-                        'hover-uppercase': hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'uppercase',
-                        'hover-lowercase':   hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'lowercase'
-                        }">{{ letter }}</h1>
-                }
-            </div>
-            <div class="flex justify-end w-full">
-                <a href="#footer" class="btnKontakt">{{('KONTAKT' | translate )}}</a>
-            </div>
-            <div class="mobileHero">
-                <div class="rightTopPositionHero ">
-                    <img class="heroImg" src="/assets/img/heroImg.png" alt="">
+                <div class="rightTopPositionHero hidden lg:flex xl:flex">
+                    <img src="/assets/img/heroImg.png" alt="">
                     <div class="emoticon">
-                        <span class="rightTopPositionHeroText">Octavian</span>
+                        <span class="rightTopPositionHeroText">Andrei</span>
                         <div>
                             <span class="emoticon-show">:)</span>
                             <span class="emoticon-hover">:D</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center lg:items-end mt-[24px]  w-full gap-[24px]">
+                <div style="display: flex;">
+                    @for(letter of heroText[1].split(''); let i = $index; track i) {
+                        
+                    <h1 (mouseenter)="onHover(letter, i, heroText[1])"
+                        (mouseleave)="onLeave()"
+                        [ngClass]="{
+                            'hover-uppercase': hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'uppercase',
+                            'hover-lowercase':   hoveredSource === heroText[1] && hoveredIndex === i && hoveredCase === 'lowercase'
+                            }"
+                            >{{ letter }}</h1>
+                    }
+                </div>
+                <div class="flex justify-end w-full pr-[16px] md:pr-[0px]">
+                    <a href="#footer" class="btnKontakt">{{('KONTAKT' | translate )}}</a>
+                </div>
+                <div class="mobileHero">
+                    <div class="rightTopPositionHero flex lg:hidden xl:hidden">
+                        <img class="heroImg" src="/assets/img/heroImg.png" alt="">
+                        <div class="emoticon">
+                            <span class="rightTopPositionHeroText">Andrei</span>
+                            <div>
+                                <span class="emoticon-show">:)</span>
+                                <span class="emoticon-hover">:D</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
-    <div class="position-social-icons socialIconsDesktopHero" >
-        <app-social-icons customClass="pl-[72px] flex flex-col gap-[8px]" >  </app-social-icons>
+    <div class="position-social-icons socialIconsDesktopHero pl-[72px] mb-[110px]" >
+        <app-social-icons customClass=" flex flex-col gap-[8px]" >  </app-social-icons>
     </div>
 </section>

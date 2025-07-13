@@ -5,12 +5,9 @@ section{
     justify-content: center;
         font-family: 'Bricolage Grotesque', sans-serif !important;
     >div{
-        width: 100%;
         max-width: 1440px;
-        padding-top: 144px;
-        padding-bottom: 144px;
-        margin-left: 120px;
-        margin-right: 120px;
+        width: 100%;
+        padding: 144px 120px;
     }
 }
 

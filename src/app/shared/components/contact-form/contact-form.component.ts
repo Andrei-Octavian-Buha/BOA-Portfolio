@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm, NgModel } from '@angular/forms';
 import { ContactPerson } from '../../models/contactPerson.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ContactService } from '../../../service/contact.service';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-contact-form',
-  imports: [CommonModule, FormsModule , HttpClientModule],
+  imports: [CommonModule, FormsModule ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
@@ -20,7 +19,20 @@ export class ContactFormComponent {
   showEmailError = false;
   showTextError = false;
 
-  constructor(private contactService: ContactService) {}  
+  http = inject(HttpClient);
+
+  post = {
+    endPoint: 'https://andreibuha.com/sendMail.php', // Replace with your actual endpoint
+    body: (playload: any) => JSON.stringify(playload),
+    options: {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      responseType: 'text' as 'json', // sau 'text' as const
+    },
+  }
+
+  constructor() {}  
 
   onInputBlur(name: NgModel) {
     if (name.invalid) {
@@ -35,23 +47,30 @@ export class ContactFormComponent {
   }
 
 
-    onSubmit(contactPerson: NgForm) {
-      if (!contactPerson.valid) {
-        console.log("Form is invalid.");
-        return;
-      }
-
-      this.contactService.sendForm(this.model).subscribe({
-        next: (res) => {
-          console.log('✅ Email sent successfully!', res);
+onSubmit(form: NgForm) {
+  if (form.submitted && form.valid) {
+    this.http.post(this.post.endPoint, this.post.body(this.model), this.post.options)
+      .subscribe({
+        next: (response) => {
+          form.resetForm();
           this.submitted = true;
-          this.resetForm(contactPerson);
+          this.showFirstNameError = false;
+          this.showEmailError = false;
+          this.showTextError = false;
+          console.log('Form submitted successfully', response); 
         },
-        error: (err) => {
-          console.error('❌ Error sending email:', err);
+        error: (error) => {
+          console.error('Error submitting form', error);
+        },
+        complete: () => {
+          console.log('Form submission complete');
         }
       });
-    }
+  } else if (form.invalid) {
+    form.resetForm();
+  }
+}
+
 
     resetForm(form: NgForm) {
       form.reset(); // Resets form controls (valid, touched, dirty)

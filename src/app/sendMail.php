@@ -15,7 +15,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $params = json_decode($json);
     
             $email = $params->email;
-            $name = $params->firstname;
+            $name = $params->firstName;
             $message = $params->text;
     
             $recipient = 'buha2595@gmail.com';  
@@ -29,7 +29,13 @@ switch ($_SERVER['REQUEST_METHOD']) {
             // Additional headers
             $headers[] = "From: noreply@mywebsite.com";
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
+            $success = mail($recipient, $subject, $message, implode("\r\n", $headers));
+
+            if ($success) {
+                echo json_encode(['status' => 'success']);
+            } else {
+                echo json_encode(['status' => 'fail']);
+            }
             break;
         default: //Reject any non POST or OPTIONS requests.
             header("Allow: POST", true, 405);

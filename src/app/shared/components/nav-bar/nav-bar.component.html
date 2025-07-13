@@ -5,16 +5,16 @@
         <div class="hidden md:block" style="width: 100%;">
             <ul class="navLinks">
                 <li class="aboutmebtn-element">
-                    <a    href="#about-me">About Me</a>
+                    <a [routerLink]="['/']" [fragment]="'about-me'" >About Me</a>
                 </li>
                 <li class="skillsbtn-element" >
-                    <a     href="#skills">Skills</a>
+                    <a [routerLink]="['/']" [fragment]="'skills'">Skills</a>
                 </li>
                 <li class="projectsbtn-element">
-                    <a   href="#projects">Projects</a>
+                    <a [routerLink]="['/']" [fragment]="'projects'" >Projects</a>
                 </li>
                 <li class="contactbtn-element" >
-                    <a    href="#footer">Contact</a>
+                    <a [routerLink]="['/']" [fragment]="'footer'" >Contact</a>
                 </li>
             </ul>
         </div>

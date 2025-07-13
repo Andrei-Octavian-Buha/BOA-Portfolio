@@ -4,18 +4,15 @@ section{
     background-color: $ColorWhite;
     display: flex;
     justify-content: center;
-        font-family: 'Bricolage Grotesque', sans-serif !important;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
     >div{
         width: 100%;
         max-width: 1440px;
         display: flex;
         justify-content: center;
-        margin-left: 120px;
-        margin-right: 120px;
+        margin: 144px 120px 0 120px;
     }
 }
-
-
 
 .projects{
     display: grid;

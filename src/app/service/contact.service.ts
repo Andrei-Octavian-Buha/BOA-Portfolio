@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactService {
 
-   private apiUrl = 'http://localhost:8080/sendmail.php'; 
+   private apiUrl = 'https://andreibuha.com/sendmail.php'; 
 
   constructor(private http: HttpClient) {}
 

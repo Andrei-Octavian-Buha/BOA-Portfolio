@@ -13,10 +13,11 @@ import {
   style,
   animate,
 } from '@angular/animations';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [CommonModule, MatSlideToggleModule, MatToolbarModule, MatButtonModule, MatIconModule, SocialIconsComponent, LogoComponent],
+  imports: [CommonModule, MatSlideToggleModule, MatToolbarModule, MatButtonModule, MatIconModule, SocialIconsComponent, LogoComponent, RouterModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss',
   animations: [

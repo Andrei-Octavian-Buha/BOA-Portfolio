@@ -5,14 +5,6 @@ section{
     display: flex;
     justify-content: center;
     font-family: 'Bricolage Grotesque', sans-serif !important;
-    >div{
-        max-width: 1440px;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin: 144px 120px;
-    }
-
 }
   
   .paperStrip {
@@ -178,42 +170,8 @@ section{
     }
   }
 
-@media (max-width: 1024px) {
-  section{
-    background-color: $ColorWhite;
-    display: flex;
-    padding-top: 0px;
-    justify-content: center;
-    >div{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-        margin: 144px 120px;
-    }
-  }
-
-
-
-}
-
 @media (max-width: 768px) {
-  section{
-    background-color: $ColorWhite;
-    display: flex;
-    padding-top: 0px;
-    justify-content: center;
-    >div{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-        margin: 88px 16px;
-    }
-  }
 
-
-    
   .paperStrip {
     width: 343px;
     height: 128px;
