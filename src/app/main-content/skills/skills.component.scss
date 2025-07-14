@@ -1,13 +1,13 @@
 @use './../../../styles.scss' as *;
 
 section{
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    background-image: url('/assets/img/skillsbg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    background-size: 100% 150%;  
     display: flex;
     justify-content: center;
-    background-color: $ColorWhite;
-    background-image: url('/assets/img/skillsbg.png');
-    background-size: cover;
-    background-position: bottom;
-        font-family: 'Bricolage Grotesque', sans-serif !important;
     >div{
         display: flex;
         flex-direction: column;
@@ -89,14 +89,14 @@ h2{
     display: flex;
     align-items: center;
     justify-content: end;
-    gap: 48px;
+    gap: 54px;
 }
 
   .imgContainer{
     display: grid;
-    grid-template-columns: repeat(5, 1fr); // 5 Spalten, gleichmäßig verteilt
+    grid-template-columns: repeat(5, minmax(auto,98px)); // 5 Spalten, gleichmäßig verteilt
     grid-template-rows: repeat(2, auto);    // 2 Reihen mit automatischer Höhe
-    gap: 20px 40px; // Abstand zwischen den Zellen, anpassbar
+    gap: 24px 40px; // Abstand zwischen den Zellen, anpassbar
     >div{
         display: flex;
         flex-direction: column;
@@ -115,6 +115,7 @@ h2{
             font-size: 18px;
             font-weight: 400;
             color: $ColorWhite;
+            text-align: center;
         }
     }
 
@@ -250,6 +251,7 @@ section{
             font-size: 18px;
             font-weight: 400;
             color: $ColorWhite;
+            text-align: center;
         }
     }
 

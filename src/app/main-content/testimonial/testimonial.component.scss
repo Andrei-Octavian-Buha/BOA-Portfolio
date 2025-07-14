@@ -29,6 +29,7 @@ section{
 .testimonialArrowWithText{
     display: flex;
     gap: 16px;
+    // align-items: center;
 }
 
 .testimonialContent{
@@ -260,10 +261,7 @@ section{
     >div{
         width: 100%;
         max-width: 1440px;
-        padding-top: 88px;
-        padding-bottom: 88px;
-        margin-left: 0px;
-        margin-right: 0px;
+        padding: 88px 16px;
     }
 }
 
@@ -278,7 +276,6 @@ h2{
     justify-content: space-between;
     gap: 32px;
     width: 100%;
-    padding: 0 16px;
 }
 
     .testimonialCard {

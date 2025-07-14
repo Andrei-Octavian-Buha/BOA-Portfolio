@@ -14,7 +14,7 @@
             </div>
             @for(project of projects; track $index) {
                 <div class="projectCard" (mouseenter)="onMouseEnter($index)"  (mouseleave)="onMouseLeave()">
-                    <div class="imgContainer">
+                    <div class="imgContainer relative">
                         <img  [class.zoomed]="hoverIndex === $index" [class.move-down-img]="$index === 0 && hoverIndex !== 0" 
                         class="imgProjects" src="{{project.img}}" alt="">
                         @if($index === hoverIndex){
@@ -23,6 +23,9 @@
                                     <a class="btnKontakt" href="" [routerLink]="['/projects', project.id]">Project details</a>
                                 </div>
                             </div>
+                        }
+                        @if(project.featured){
+                        <img class="absolute bottom-[0px] md:bottom-[60px] w-[118px] md:w-[168px]" src="/assets/img/featured.png" alt="">
                         }
                     </div>
                     <div class="projectInfo">
