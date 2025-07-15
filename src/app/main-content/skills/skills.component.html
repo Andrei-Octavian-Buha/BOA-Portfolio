@@ -2,13 +2,13 @@
     <div>
         <div class="flex flex-col xl:flex-row xl:gap-[48px] xl:items-center">
             <div class="flex flex-col items-end gap-[8px]">
-                <h3 class="flex">MY STACK</h3>
+                <h3 class="flex">{{'Skills-Intro' | translate}}</h3>
                 <div class="skillContainer">
-                    <h2 class="font-bold w-full">Skill set</h2>
+                    <h2 class="font-bold w-full">{{'Skills-Titile' | translate}}</h2>
                 </div>
             </div>
             <div class="textContainer">
-                <p>Experienced in JavaScript and Angular, I enjoy building dynamic and responsive user interfaces. Passionate about learning, I’m always exploring new front-end tools and frameworks to stay current and deliver efficient, modern web applications that scale well.</p>
+                <p>{{'Skills-Message' | translate }}</p>
             </div>
         </div>
         <div class="bottomContainer">
@@ -24,11 +24,11 @@
                 @if (isVisible) {
                     <div class="isActiveContainer">
                         <img class="arrowImg"   src="/assets/img/icons/pullArrow.png" alt="">
-                        <p  class=""  >Pull to peel</p>
+                        <p  class=""  >{{'Skills-Pull' | translate}}</p>
                     </div>
                   } @else {
                     <div class="isInactiveContainer">
-                        <p>Also, I'm interested in diving into: </p>
+                        <p>{{'Skills-Future' | translate}} </p>
                         <div style="display: flex; gap: 16px;">
                             <div class="interesContainer">                        
                                 <img src="/assets/img/React.png" alt="">

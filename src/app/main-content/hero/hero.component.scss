@@ -21,7 +21,13 @@ h1{
   color: $ColorWhite;
   margin: 0;
   line-height: 100%;
+  letter-spacing: 0%;
+  width: 1ch;
   text-align: center;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
 }
 
 .hero{
@@ -251,7 +257,7 @@ h1{
   filter: grayscale(100%);
   &:hover{
     filter: grayscale(0%);
-    transition: all 0.3s ease;
+    transition: all 125ms ease;
   }
 }
 
@@ -259,14 +265,14 @@ h1{
   text-transform: lowercase;
   color: #F7C518;
   cursor: pointer;
-  transition: color 125ms ease;
+  transition: all 125ms ease;
 }
 
 .hover-lowercase {
   text-transform: uppercase;
   color: #F7C518;
   cursor: pointer;
-  transition: color 125ms ease;
+  transition: all 125ms ease;
 }
 
 .mobileHero{
@@ -281,7 +287,6 @@ h1{
   font-size: 96px;
   font-weight: 700;
   color: $ColorWhite;
-  margin: 0;
 }
 
 .bottomPositionHero{
@@ -334,7 +339,6 @@ section{
   font-size: 64px;
   font-weight: 700;
   color: $ColorWhite;
-  margin: 0;
 }
 }
 
@@ -343,6 +347,5 @@ h1{
   font-size: 48px;
   font-weight: 700;
   color: $ColorWhite;
-  margin: 0;
 }
 }

@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
-  constructor() { }
+  constructor( private translate: TranslateService) { }
   private projects = [
   { 
     id: "join",
     title: 'Join',
+    descriptionKey: 'projects.join.description',
     description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
     img: '/assets/img/Join.png',
     imgBg: '/assets/img/joinBG.jpg',
@@ -26,6 +28,7 @@ export class ProjectService {
   { 
     id: "el-pollo-loco",
     title: 'El Pollo Loco',
+        descriptionKey: 'projects.elPolloLoco.description',
     description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen./',
     img: '/assets/img/elPolloLoco.png',
     imgBg: '/assets/img/elPolloLoco.png',
@@ -43,6 +46,7 @@ export class ProjectService {
   { 
     id: "dabubble",
     title: 'DaBubble',
+        descriptionKey: 'projects.dabubble.description',
     description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
     img: '/assets/img/daBubble.png',
     imgBg: '/assets/img/daBubble.png',

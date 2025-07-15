@@ -1,5 +1,4 @@
-<div style="position: relative;">
-    <img class="stickerLogo desktop" src="/assets/img/stickerFd.png" alt="">
+<div>
     <form (ngSubmit)="onSubmit(form)" #form="ngForm" style="display: flex; flex-direction: column; gap: 40px; padding-top: 128px;">
         <div>
             <div class="form-group">
@@ -37,10 +36,10 @@
                     <span class="custom-checkbox">
                         <span></span>
                     </span> 
-                    <p>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                    <p>I've read the <a [routerLink]="'legal-notice'">privacy policy</a> and agree to the processing of my data as outlined.</p>
                 </label>
             </div>
-            @if(checkbox.invalid) {
+            @if(checkbox.touched && !model.agree) {
                 <div class="alert alert-danger">
                     You must agree to the terms and conditions
                 </div>

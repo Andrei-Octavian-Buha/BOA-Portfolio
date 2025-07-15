@@ -25,8 +25,11 @@ constructor() {
 
 onHover(letter: string , index: number , source: string) {
   this.hoveredCase = letter === letter.toUpperCase() ? 'uppercase' : 'lowercase';
+  setTimeout(() => {
   this.hoveredIndex = index;
   this.hoveredSource = source;
+  }, 75); // Adjust the delay as needed
+
 }
 
 onLeave() {

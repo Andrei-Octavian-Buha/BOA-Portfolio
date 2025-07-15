@@ -1,5 +1,30 @@
 {
   "HELLO": "Hello World",
-  "INTRO": "I’m Octavian Buha",
-  "KONTAKT": "Get in Touch"
+  "INTRO": "I`m Andrei Buha",
+  "KONTAKT": "Get in Touch",
+  "AboutMe-Ask": "Who`s Andrei?",
+  "AboutMe-Title": "About Me",
+  "AT-I": "I'm Andrei Buha.",
+  "AT-M": "My passion for programming started in childhood, when I created game servers. Though I didn't realize it back then, coding has always been my true calling. In 2024, after exploring other fields, I chose to fully dedicate myself to software development.I'm driven by the challenge of finding clean, efficient solutions and learning something new every day.",
+  "AT-C": "Let's build something great together!",
+  "ABtn": "Let's talk",
+  "AboutMe-Location": "Based in Schrozberg",
+  "AboutMe-Remote": "Open to relocate",  
+  "AboutMe-Relocate": "Open to work remote",
+  "Skills-Intro": "MY STACK",
+  "Skills-Titile": "Skill set",
+  "Skills-Message": "Experienced in JavaScript and Angular, I enjoy building dynamic and responsive user interfaces. Passionate about learning, I’m always exploring new front-end tools and frameworks to stay current and deliver efficient, modern web applications that scale well.",
+  "Skills-Pull": "Pull to peel",
+  "Skills-Future": "Also, I'm interested in diving into: ",
+   "projects": {
+    "join": {
+      "description": "x"
+    },
+    "elPolloLoco": {
+      "description": "1"
+    },
+    "dabubble": {
+      "description": "2"
+    }
+  }
 }

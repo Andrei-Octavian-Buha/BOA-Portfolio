@@ -189,20 +189,12 @@
 }
 
 
-.stickerLogo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 168px;
-}
+
 
 .mobile{display: none;}
 
 @media only screen and (max-width: 1220px) {
-  .mobile{display: flex;}
- .desktop{
-  display: none;
- }
+
  .buttonPosition{
   width: 100%;
   display: flex;
