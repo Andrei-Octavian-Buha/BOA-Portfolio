@@ -29,15 +29,15 @@
     "weks": "wochen",
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "implementation": "test join"
+      "implementation": "Ich habe einen Monat an diesem Projekt in einem 3-köpfigen Team gearbeitet. Es war eine neue und herausfordernde Erfahrung, so eng mit anderen zusammenzuarbeiten, aber auch sehr bereichernd. Wir haben Jira verwendet, um Aufgaben zu verwalten und unseren Fortschritt zu verfolgen, was dazu beigetragen hat, den Arbeitsablauf organisiert und effizient zu gestalten. Durch dieses Projekt habe ich viel über Teamarbeit, Kommunikation und das Arbeiten in einem strukturierten Entwicklungsprozess gelernt."
     },
     "elPolloLoco": {
       "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      "implementation": "test elpollo loco"
+      "implementation": "Dies war mein erstes Spiel, das ich mit JavaScript entwickelt habe. Es ist ein Plattformspiel, in dem der Hauptcharakter Pepe Münzen und Tabasco-Salsa sammelt, um gegen ein verrücktes Huhn zu kämpfen. Für die Darstellung habe ich das HTML5-Canvas verwendet und einen objektorientierten Programmieransatz (OOP) mit Klassen und Objekten verfolgt. Durch dieses Projekt habe ich die Grundlagen der Spieleentwicklung gelernt, einschließlich Animation, Kollisionsabfrage und der Strukturierung von Code mithilfe von OOP. Das Projekt hat mich motiviert, weiterzulernen und in Zukunft komplexere Spiele zu entwickeln."
     },
     "dabubble": {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "implementation": "test dabubble"
+      "implementation": "Als nächstes werde ich DaBubble entwickeln, eine Chat-App ähnlich wie Slack. Dieses Projekt wird mir helfen, Fähigkeiten in Echtzeitkommunikation, Benutzerauthentifizierung und kollaborativen Funktionen zu entwickeln und meine Full-Stack-Entwicklungskenntnisse zu verbessern."
     }
   },
 

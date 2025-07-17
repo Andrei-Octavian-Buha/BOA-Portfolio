@@ -29,15 +29,15 @@
     "weks": "weeks",
     "join": {
       "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "implementation": "test join"
+      "implementation": "I worked for one month on this project as part of a 3-person team. It was a new and challenging experience to collaborate closely with others, but also very rewarding. We used Jira to manage tasks and track our progress, which helped keep the workflow organized and efficient. This project taught me a lot about teamwork, communication, and working within a structured development process."
     },
     "elPolloLoco": {
       "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      "implementation": "test elpollo loco"
+      "implementation": "This was my first game developed using JavaScript. It’s a platformer where the main character, Pepe, collects coins and Tabasco salsa to fight a crazy hen. I used the HTML5 canvas for rendering and followed an object-oriented programming (OOP) approach using classes and objects. Through this project, I learned the basics of game development, including animation, collision detection, and structuring code with OOP. It inspired me to continue learning and eventually build more complex games in the future. "
     },
     "dabubble": {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "implementation": "test dabubble"
+      "implementation": "Next, I will build DaBubble, a chat app similar to Slack. This project will help me develop skills in real-time communication, user authentication, and collaborative features, improving my full-stack development abilities."
     }
   },
   "Testimonial-Intro": "IN THEIR WORDS:",

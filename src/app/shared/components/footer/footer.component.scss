@@ -3,8 +3,8 @@ section{
     display: flex;
     justify-content: center;
     background-image: url('/assets/img/footerbg.png');
-    background-size: cover;
-    background-position: top;
+        background-position: center top;
+    background-size: 100% 150%;
     background-color: $ColorWhite;
     box-sizing: border-box;
     font-family: 'Bricolage Grotesque', sans-serif !important;
@@ -246,8 +246,9 @@ section{
     display: flex;
     justify-content: center;
     background-image: url('/assets/img/footerbg.png');
-    background-size: cover;
-    background-position: top;
+        background-position: center top;
+    background-size: 100% 150%;
+
     background-color: $ColorWhite;
     box-sizing: border-box;
     >div{

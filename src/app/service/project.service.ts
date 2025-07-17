@@ -20,10 +20,11 @@ export class ProjectService {
         {src:'css', alt:'CSS'},
     ],
     gitLink: 'https://github.com/Andrei-Octavian-Buha/join.git',
-    demoLink: 'https://github.com/Andrei-Octavian-Buha/join.git',
-    duration: 3,
-    logo: true,
-    featured: false
+    demoLink: 'https://join.andreibuha.com',
+    duration: 5,
+        demo:true,
+    logo: false,
+    featured: true
   },
   { 
     id: "el-pollo-loco",
@@ -38,8 +39,9 @@ export class ProjectService {
         {src:'css', alt:'CSS'},
     ],
     gitLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
-    demoLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
-    duration: 5,
+    demoLink: 'https://elpolloloco.andreibuha.com',
+    duration: 3,
+        demo:true,
     logo: true,
     featured: false
   },
@@ -54,12 +56,16 @@ export class ProjectService {
         {src:'js', alt:'JavaScript'},
         {src:'html', alt:'HTML'},
         {src:'css', alt:'CSS'},
+        {src:'ts', alt:'Typescript'},
+        {src:'angular', alt:'Angular'},
+        {src:'firebase', alt:'Firebase'}
     ],
     gitLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
     demoLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
-    duration: 3, 
-    logo: false,
-    featured: true
+    duration: 0,
+    demo:false,
+    logo: true,
+    featured: false
   }
   ];
 
