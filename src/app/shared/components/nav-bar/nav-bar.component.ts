@@ -7,6 +7,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { SocialIconsComponent } from "../social-icons/social-icons.component";
+import { TranslateModule } from '@ngx-translate/core';
 import {
   trigger,
   transition,
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [CommonModule, MatSlideToggleModule, MatToolbarModule, MatButtonModule, MatIconModule, SocialIconsComponent, LogoComponent, RouterModule],
+  imports: [CommonModule, MatSlideToggleModule, MatToolbarModule, MatButtonModule, MatIconModule, SocialIconsComponent, LogoComponent, RouterModule, TranslateModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.scss',
   animations: [

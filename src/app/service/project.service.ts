@@ -11,7 +11,7 @@ export class ProjectService {
     id: "join",
     title: 'Join',
     descriptionKey: 'projects.join.description',
-    description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
+    implementationKey: 'projects.join.implementation',
     img: '/assets/img/Join.png',
     imgBg: '/assets/img/joinBG.jpg',
         skills: [
@@ -28,8 +28,8 @@ export class ProjectService {
   { 
     id: "el-pollo-loco",
     title: 'El Pollo Loco',
-        descriptionKey: 'projects.elPolloLoco.description',
-    description: 'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen./',
+    descriptionKey: 'projects.elPolloLoco.description',
+    implementationKey: 'projects.elPolloLoco.implementation',
     img: '/assets/img/elPolloLoco.png',
     imgBg: '/assets/img/elPolloLoco.png',
     skills: [
@@ -46,8 +46,8 @@ export class ProjectService {
   { 
     id: "dabubble",
     title: 'DaBubble',
-        descriptionKey: 'projects.dabubble.description',
-    description: 'Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code. Feel free to explore, test, and share your feedback!',
+    descriptionKey: 'projects.dabubble.description',
+        implementationKey: 'projects.dabubble.implementation',
     img: '/assets/img/daBubble.png',
     imgBg: '/assets/img/daBubble.png',
         skills: [

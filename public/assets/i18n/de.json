@@ -18,15 +18,61 @@
   "Skills-Message": "Erfahren in JavaScript und Angular, entwickle ich gerne dynamische und responsive Benutzeroberflächen. Mit großer Lernbereitschaft erkunde ich ständig neue Frontend-Tools und Frameworks, um auf dem neuesten Stand zu bleiben und effiziente, moderne Webanwendungen zu entwickeln, die gut skalierbar sind.",
   "Skills-Pull": "Abziehen",
   "Skills-Future": "Außerdem möchte ich mich vertiefen in:",
+  "Projects-Intro": "Mein Handwerk",
+  "Projects-Title": "Projekte",
+  "Projects-Message": "Entdecke meine Projekte – entwickelt mit responsivem Design, intuitiven Oberflächen und sauberem, effizientem Code. Klick dich durch und erlebe sie selbst!",
+  "Projects-Btn": "Projektdetails",
   "projects": {
+    "description": "Beschreibung",
+    "implementation": "Implementierungsdetails",
+    "duration": "Dauer",
+    "weks": "wochen",
     "join": {
-      "description": "Take a look at my projects — built with a focus on responsive design, user-friendly interfaces, and clean, efficient code."
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "implementation": "test join"
     },
     "elPolloLoco": {
-      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa..."
+      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "implementation": "test elpollo loco"
     },
     "dabubble": {
-      "description": "DaBubble is built with clean design, smooth interactions, and intuitive UX."
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "implementation": "test dabubble"
     }
+  },
+
+  "Testimonial-Intro": "IN IHREN WORTEN:",
+  "Testimonial-Title": "Gedanken der Kollegen",
+
+  "Footer-Intro": "Kontakt",
+  "Footer-Title": "Bereit für eine Zusammenarbeit?",
+  "Footer-Message": "Kontaktieren Sie mich gern, wenn Sie einen engagierten Webentwickler suchen. Mit meiner Expertise und Lernbereitschaft möchte ich Ihr Team sinnvoll unterstützen. Ich freue mich darauf, meine Fähigkeiten in neue Projekte einzubringen und gemeinsam Ziele zu erreichen. Lassen Sie uns besprechen, wie ich Mehrwert für Sie schaffen kann.",
+
+  "contact": {
+    "name": "Wie ist Ihr Name?",
+    "namePlaceholder": "Dein Name kommt hier hin",
+    "nameError": "Ups! Es sieht so aus, als ob Ihr Name fehlt.",
+    "email": "Wie lautet Ihre E-Mail?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Hoppla! Deine E-Mail ist erforderlich.",
+    "text": "Wie kann ich Ihnen helfen?",
+    "textPlaceholder": "Ihr Text",
+    "textError": "Was müssen Sie entwickeln?"
+  },
+  "ContactFrom-First":"Ich habe die",
+  "ContactForm-Second":"Datenschutzerklärung",
+  "ContactForm-Third":"gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "ContactForm-Error": "Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen",
+  "ContactForm-Btn": "Absenden",
+
+
+  "ProjectsListBtnGoBack": "Zurück",
+  "ProjectsListBtnNextProject": "Nächstes Projekt",
+
+    "Navigation": {
+    "AboutMe": "Über mich",
+    "Skills": "Fähigkeiten",
+    "Projects": "Projekte",
+    "Contact": "Kontakt"
   }
 }       

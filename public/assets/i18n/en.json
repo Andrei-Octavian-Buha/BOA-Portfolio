@@ -11,20 +11,66 @@
   "AboutMe-Location": "Based in Schrozberg",
   "AboutMe-Remote": "Open to relocate",  
   "AboutMe-Relocate": "Open to work remote",
+
   "Skills-Intro": "MY STACK",
   "Skills-Titile": "Skill set",
   "Skills-Message": "Experienced in JavaScript and Angular, I enjoy building dynamic and responsive user interfaces. Passionate about learning, I’m always exploring new front-end tools and frameworks to stay current and deliver efficient, modern web applications that scale well.",
   "Skills-Pull": "Pull to peel",
   "Skills-Future": "Also, I'm interested in diving into: ",
-   "projects": {
+
+  "Projects-Intro": "MY CRAFT",
+  "Projects-Title": "Projects",
+  "Projects-Message": "Explore my projects — crafted with responsive design, intuitive interfaces, and clean, efficient code. Click through and see them in action!",
+  "Projects-Btn": "Project details",
+  "projects": {
+    "description": "Description",
+    "implementation": "Implementation Details",
+    "duration": "Duration",
+    "weks": "weeks",
     "join": {
-      "description": "x"
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "implementation": "test join"
     },
     "elPolloLoco": {
-      "description": "1"
+      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "implementation": "test elpollo loco"
     },
     "dabubble": {
-      "description": "2"
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "implementation": "test dabubble"
     }
+  },
+  "Testimonial-Intro": "IN THEIR WORDS:",
+  "Testimonial-Title": "Colleagues' Thoughts",
+
+  "Footer-Intro": "Contact Me",
+  "Footer-Title": "Ready to work together?",
+  "Footer-Message": "Feel free to contact me if you are looking for a dedicated web developer. With my expertise and willingness to learn, I aim to support your team effectively. I look forward to applying my skills to new projects and achieving goals together. Let’s discuss how I can add value for you.",
+
+  "contact": {
+    "name": "What's your name?",
+    "namePlaceholder": "Your name goes here",
+    "nameError": "Oops! It seems your name is missing",
+    "email": "What's your email?",
+    "emailPlaceholder": "youremail@email.com",
+    "emailError": "Hoppla! your email is required",
+    "text": "How can I help you ?",
+    "textPlaceholder": "Your text",
+    "textError": "What do you need to develop?"
+  },
+  "ContactFrom-First":"I've read the ",
+  "ContactForm-Second":"privacy policy",
+  "ContactForm-Third":"and agree to the processing of my data as outlined.",
+  "ContactForm-Error": "You must agree to the terms and conditions",
+  "ContactForm-Btn": "Submit",
+
+  "ProjectsListBtnGoBack": "Go Back",
+  "ProjectsListBtnNextProject": "Next Project ",
+
+  "Navigation": {
+    "AboutMe": "About Me",
+    "Skills": "Skills",
+    "Projects": "Projects",
+    "Contact": "Contact"
   }
 }

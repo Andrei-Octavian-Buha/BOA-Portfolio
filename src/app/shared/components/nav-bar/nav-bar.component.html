@@ -5,16 +5,16 @@
         <div class="hidden md:block" style="width: 100%;">
             <ul class="navLinks">
                 <li class="aboutmebtn-element">
-                    <a [routerLink]="['/']" [fragment]="'about-me'" >About Me</a>
+                    <a [routerLink]="['/']" [fragment]="'about-me'" >{{'Navigation.AboutMe' | translate}}</a>
                 </li>
                 <li class="skillsbtn-element" >
-                    <a [routerLink]="['/']" [fragment]="'skills'">Skills</a>
+                    <a [routerLink]="['/']" [fragment]="'skills'">{{'Navigation.Skills' | translate}}</a>
                 </li>
                 <li class="projectsbtn-element">
-                    <a [routerLink]="['/']" [fragment]="'projects'" >Projects</a>
+                    <a [routerLink]="['/']" [fragment]="'projects'" >{{'Navigation.Projects' | translate}}</a>
                 </li>
                 <li class="contactbtn-element" >
-                    <a [routerLink]="['/']" [fragment]="'footer'" >Contact</a>
+                    <a [routerLink]="['/']" [fragment]="'footer'" >{{'Navigation.Contact' | translate}}</a>
                 </li>
             </ul>
         </div>
@@ -47,16 +47,16 @@
                     </div>
                     <ul class="flex w-full flex-col items-center justify-between">
                         <li class="aboutmebtn-element" (click)="closeMenu()">
-                            <a href="#about-me">About Me</a>
+                            <a href="#about-me">{{'Navigation.AboutMe' | translate}}</a>
                         </li>
                         <li class="skillsbtn-element" (click)="closeMenu()">
-                            <a href="#skills">Skills</a>
+                            <a href="#skills">{{'Navigation.Skills' | translate}}</a>
                         </li>
                         <li class="projectsbtn-element" (click)="closeMenu()">
-                            <a href="#projects">Projects</a>
+                            <a href="#projects">{{'Navigation.Projects' | translate}}</a>
                         </li>
                         <li class="contactbtn-element" (click)="closeMenu()">
-                            <a href="#footer">Contact</a>
+                            <a href="#footer">{{'Navigation.Contact' | translate}}</a>
                         </li>
                         <li class="language-toggle-mobile">
                         <div class="language-toggle">

@@ -4,10 +4,11 @@ import { ContactFormComponent } from "../contact-form/contact-form.component";
 import { LogoComponent } from "../logo/logo.component";
 import { RouterModule} from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [CommonModule, ContactFormComponent, LogoComponent, RouterModule],
+  imports: [CommonModule, ContactFormComponent, LogoComponent, RouterModule , TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

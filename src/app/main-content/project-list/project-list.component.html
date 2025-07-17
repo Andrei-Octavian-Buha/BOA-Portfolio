@@ -4,7 +4,7 @@
     <div class="mb-[56px]">
         <div class="layoutContainer">
             <div class="hidden lg:flex w-full pl-[72px] items-start">
-                    <a routerLink="/" class="flex gap-[8px] text-lg font-bold text-[#0E1013] hover:text-[#F87A55]"> <img src="./assets/img/projektBack.png" alt=""> Go Back</a>
+                    <a routerLink="/" class="flex gap-[8px] text-lg font-bold text-[#0E1013] hover:text-[#F87A55]"> <img src="./assets/img/projektBack.png" alt=""> {{'ProjectsListBtnGoBack' | translate }}</a>
             </div>
             <div class="flex flex-col gap-[40px] lg:flex-row">
                 <div class="flex flex-col gap-[32px] max-w-[488px] ">
@@ -16,16 +16,16 @@
                     </div>
                     <div class="flex flex-col gap-[48px]">
                         <div class="flex flex-col gap-[16px]">
-                            <h3 class="font-bold text-2xl">Description</h3>
-                            <p class="font-normal text-lg">Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </p>
+                            <h3 class="font-bold text-2xl">{{'projects.description' | translate}}</h3>
+                            <p class="font-normal text-lg">{{ project.descriptionKey | translate }}</p>
                         </div>
                         <div class="flex flex-col gap-[16px]">
-                            <h3 class="font-bold text-2xl">Implementation Details</h3>
-                            <p>Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.</p>
+                            <h3 class="font-bold text-2xl">{{'projects.implementation' | translate}}</h3>
+                            <p>{{ project.implementationKey | translate }}</p>
                         </div>
                         <div class="flex items-center gap-[8px]">
-                            <h3 class="font-bold text-lg">Duration:</h3>
-                            <p class="">{{project.duration}} weeks</p>
+                            <h3 class="font-bold text-lg">{{'projects.duration' | translate}}:</h3>
+                            <p class="">{{project.duration}} {{'projects.weks' | translate}}</p>
                         </div>
                     </div>
                     <div class="skillsContainer">
@@ -64,8 +64,8 @@
                 </div>
             </div>
             <div class="flex  w-full items-center justify-between  lg:justify-end lg:px-[72px]">
-                <a routerLink="/" class="flex  lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA] sm:text-[#0E1013] hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> Go Back</a>
-                <a [routerLink]="['/projects', nextProjectId]"  class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold sm:text-[#0E1013] lg:text-[#F8F9FA] hover:text-yellow-400" >Next Project <img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
+                <a routerLink="/" class="flex  lg:hidden gap-[8px] text-lg font-bold text-[#F8F9FA] sm:text-[#0E1013] hover:text-[#F87A55]"> <img class="w-[24px] h-[24px]" src="./assets/img/projektBack.png" alt=""> {{'ProjectsListBtnGoBack' | translate }}</a>
+                <a [routerLink]="['/projects', nextProjectId]"  class="flex gap-[8px] text-[#F8F9FA] text-lg font-bold sm:text-[#0E1013] lg:text-[#F8F9FA] hover:text-yellow-400" >{{'ProjectsListBtnNextProject' | translate }}<img class="w-[24px] h-[24px]"  src="./assets/img/nextArrow.png" alt=""></a>
             </div>
         </div>
     </div>

@@ -4,9 +4,11 @@ import { NavBarComponent } from "../../shared/components/nav-bar/nav-bar.compone
 import { ProjectService } from '../../service/project.service';
 import { ActivatedRoute } from '@angular/router';
 import { RouterModule} from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-project-list',
-  imports: [CommonModule, NavBarComponent, RouterModule],
+  imports: [CommonModule, NavBarComponent, RouterModule,  TranslateModule],
   templateUrl: './project-list.component.html',
   styleUrl: './project-list.component.scss'
 })

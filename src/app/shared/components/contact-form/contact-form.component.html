@@ -2,29 +2,29 @@
     <form (ngSubmit)="onSubmit(form)" #form="ngForm" style="display: flex; flex-direction: column; gap: 40px; padding-top: 128px;">
         <div>
             <div class="form-group">
-                <label for="firstContactName" class="labelStyle">What's your name?</label>
-                <input *ngIf="!showFirstNameError" (blur)="onInputBlur(name)"   id="firstContactName" class="form-control" type="text" placeholder="Your name goes here" [(ngModel)]="model.firstName" name="firstName" required #name="ngModel" >
+                <label for="firstContactName" class="labelStyle">{{'contact.name' | translate }}</label>
+                <input *ngIf="!showFirstNameError" (blur)="onInputBlur(name)"   id="firstContactName" class="form-control" type="text" placeholder="{{'contact.namePlaceholder' | translate }}" [(ngModel)]="model.firstName" name="firstName" required #name="ngModel" >
                 @if (showFirstNameError) {
                     <div class="alertError" (click)="showFirstNameError = false">
-                    <p>Oops! It seems your name is missing</p>
+                    <p>{{'contact.nameError' | translate }}</p>
                     </div>
                 }
             </div>
             <div class="form-group">
-                <label for="lastContactName" class="labelStyle">What's your email?</label>
-                <input *ngIf="!showEmailError"  (blur)="onInputBlur(email)"  id="lastContactName"  class="form-control" type="email" placeholder="youremail@email.com" [(ngModel)]="model.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #email="ngModel">
+                <label for="lastContactName" class="labelStyle">{{'contact.email' | translate }}</label>
+                <input *ngIf="!showEmailError"  (blur)="onInputBlur(email)"  id="lastContactName"  class="form-control" type="email" placeholder="{{'contact.emailPlaceholder' | translate }}" [(ngModel)]="model.email" name="email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" #email="ngModel">
                 @if (showEmailError) {
                     <div class="alertError" (click)="showEmailError = false">
-                        <p>Hoppla! your email is required</p>
+                        <p>{{'contact.emailError' | translate }}</p>
                     </div>
                 }
             </div>
             <div class="form-group">
-                <label for="textContact" class="labelStyle">How can I help you ?</label>
-                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="Your text"  minlength="10" [(ngModel)]="model.text" name="text" required #text="ngModel">
+                <label for="textContact" class="labelStyle">{{'contact.text' | translate }}</label>
+                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="{{'contact.textPlaceholder' | translate }}"  minlength="10" [(ngModel)]="model.text" name="text" required #text="ngModel">
                 @if (showTextError) {
                     <div class="alertError" (click)="showTextError = false">
-                        <p>What do you need to develop?</p>
+                        <p>{{'contact.textError' | translate }}</p>
                     </div>
                 }
             </div>
@@ -36,19 +36,19 @@
                     <span class="custom-checkbox">
                         <span></span>
                     </span> 
-                    <p>I've read the <a [routerLink]="'legal-notice'">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                    <p> {{'ContactFrom-First' | translate }} <a [routerLink]="'legal-notice'">{{"ContactForm-Second" | translate }}</a> {{'ContactForm-Third' | translate }}</p>
                 </label>
             </div>
             @if(checkbox.touched && !model.agree) {
                 <div class="alert alert-danger">
-                    You must agree to the terms and conditions
+                    {{'ContactForm-Error' | translate}}
                 </div>
             }
             <div class="buttonPosition">
                 <div class="arrowAnimation mobile">
                     <img src="/assets/img/lineContact.png" alt="">
                 </div>
-                <button [disabled]="!model.agree" class="btnKontakt">Submit</button>
+                <button [disabled]="!model.agree" class="btnKontakt">{{'ContactForm-Btn' | translate}}</button>
             </div>
         </div>
 
