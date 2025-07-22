@@ -1,51 +1,78 @@
 
-<header>
-<app-nav-bar></app-nav-bar>
+<header class="m-auto sticky top-0 z-1000 flex ">
+<app-nav-bar ></app-nav-bar>
 </header>
 <section>
-    <div class="mb-[56px]">
-        <div class="layoutContainer">
-            <div class="flex w-full pl-[72px] items-start">
-                    <a routerLink="/" class="flex gap-[8px] text-lg font-bold text-[#0E1013] hover:text-[#F87A55]"> <img src="./assets/img/projektBack.png" alt=""> Go Back</a>
+    <div class="mb-[56px] flex flex-col mt-[128px] gap-[48px]">
+            <div class="flex w-full  items-start">
+                    <a routerLink="/" class="flex gap-[8px] text-lg font-bold text-[#0E1013] hover:text-[#F87A55]"> <img src="./assets/img/projektBack.png" alt="">{{'ProjectsListBtnGoBack' | translate }}</a>
             </div>
             <div class="flex flex-col gap-[16px]">
-                <h1>Impressum</h1>
+                <h1>{{'LegalNotice.Impressum' | translate }}</h1>
+                <h2>{{'LegalNotice.Angabe' | translate }}</h2>
+                <p>
+                  Andrei-Octavian Buha<br>
+                  Goetheweg 6<br>
+                  74575 Schrozberg<br>
+                  Deutschland
+                </p>
+                <h2>{{'LegalNotice.Kontakt' | translate }}</h2>
+                <p>
+                  Telefon: +49 162 7361529<br>
+                  E-Mail: buha2595&#64;gmail.com
+                </p>
+                <h2>{{'LegalNotice.Verantwortlich' | translate }}</h2>
+                <p>
+                  Andrei-Octavian Buha<br>
+                  Goetheweg 6<br>
+                  74575 Schrozberg<br>
+                  Deutschland
+                </p>
 
-            <h2>Angaben gemäß § 5 TMG</h2>
-            <p>
-                <strong>Andrei-Octavian Buha</strong><br>
-                Goetheweg 6<br>
-                74575 Schrozberg<br>
-                Deutschland
-            </p>
+                <h2>{{'LegalNotice.Haftungsausschluss' | translate}}</h2>
+                <p>{{ 'LegalNotice.HaftungsausschlussMessage' | translate }}</p>
+                <h2>{{'LegalNotice.Urheberrecht' | translate}}</h2>
+                <p>{{'LegalNotice.UrheberrechtMessage' | translate}}</p>
 
-            <h2>Kontakt</h2>
-            <p>
-                Telefon: +49 162 7361529<br>
-                E-Mail: <a href="mailto:buha2595@gmail.com">buha2595&&#64;gmail.com</a>
-            </p>
+                <hr>
 
-            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-            <p>
-                Andrei-Octavian Buha<br>
-                Goetheweg 6<br>
-                74575 Schrozberg<br>
-                Deutschland
-            </p>
+                <h1>{{'LegalNotice.Datenschutzerklarung.Title' | translate}}</h1>
+                <h2>1. {{'LegalNotice.Datenschutzerklarung.1' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.1Message' | translate}}</p>
+                <h2>2. {{'LegalNotice.Datenschutzerklarung.2' | translate}}</h2>
+                <p>
+                  Andrei-Octavian Buha<br>
+                  Goetheweg 6<br>
+                  74575 Schrozberg<br>
+                  Deutschland<br>
+                  Telefon: +49 162 7361529<br>
+                  E-Mail: buha2595&#64;gmail.com
+                </p>
 
-            <h2>Haftungsausschluss</h2>
-            <p>
-                Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
-                Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
-            </p>
+                <h2>3. {{'LegalNotice.Datenschutzerklarung.3' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.3Message' | translate}}</p>
+                <pre>{{'LegalNotice.Datenschutzerklarung.3MessageList' | translate}}</pre>
+                <h2>{{'LegalNotice.Datenschutzerklarung.3Coockies' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.3CoockiesMessage' | translate}}</p>
 
-            <h2>Urheberrecht</h2>
-            <p>
-                Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
-                Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes
-                bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-            </p>
+                <h2>4. {{'LegalNotice.Datenschutzerklarung.4' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.4Message' | translate}}</p>
+
+                <h2>5. {{'LegalNotice.Datenschutzerklarung.5' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.5Message' | translate}}</p>
+                <pre>{{'LegalNotice.Datenschutzerklarung.5MessageRightsList' | translate}}</pre>
+                <p>{{'LegalNotice.Datenschutzerklarung.5MessageKontakt' | translate}}</p>
+                <h2>6. {{'LegalNotice.Datenschutzerklarung.6' | translate}}</h2>
+                <p>{{'LegalNotice.Datenschutzerklarung.6Message' | translate}}</p>
+                <p>
+                  Landesbeauftragter für Datenschutz und Informationsfreiheit Baden-Württemberg<br>
+                  Lautenschlagerstraße 20, 70173 Stuttgart<br>
+                  E-Mail: poststelle&#64;lfdi.bwl.de
+                </p>
+                <h2>7. {{'LegalNotice.Datenschutzerklarung.7' | translate}}</h2>
+                <p>
+                  {{'LegalNotice.Datenschutzerklarung.7Message' | translate}}
+                </p>
             </div>
         </div>
-    </div>
 </section>

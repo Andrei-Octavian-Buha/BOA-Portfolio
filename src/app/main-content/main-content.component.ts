@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from "./hero/hero.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
@@ -15,5 +15,5 @@ import { NavBarComponent } from '../shared/components/nav-bar/nav-bar.component'
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
-
 }
+

@@ -19,10 +19,11 @@ export class TestimonialComponent {
 
   testimonials = [
     {
-      name: 'John Doe',
-      job: 'Software engineer',
-      feedback: 'This service is amazing! Highly recommend it to everyone.',
-      date: '2023-10-01',
+      name: 'Niklas Lampe',
+      job: 'Web Developer',
+      feedback: 'Ich habe mit Andrei zusammen an einem Gruppenprojekt gearbeitet, sowohl fachlich war Andrei sehr kompetent als auch in der Zusammenarbeit mit den verschiedenen Gruppenmitgliedern. Er war stehts zuverlässig und hilfsbereit, weshalb ich jederzeit gerne wieder mit Ihm zusammen Projekt umsetzen würde.',
+      link: 'https://github.com/NiklasLa46',
+      date: '2023-07-12',
       bg: 0,
       card: 1,
     },
@@ -36,10 +37,10 @@ export class TestimonialComponent {
       card: 2
     },
     {
-      name: 'Alice Johnson',
-      job: 'Product manager',
-      feedback: 'I love the quality and attention to detail.',
-      date: '2023-10-03',
+      name: 'ChatGPT',
+      job: 'AI Collaborator',
+      feedback: 'A motivated and forward-thinking developer, eager to build real solutions using web tech and AI. Shows strong growth in Angular, with clear plans to expand into Python and GPT-driven apps.',
+      date: '2025-07-20',
       bg: 0,
       card: 3
     }

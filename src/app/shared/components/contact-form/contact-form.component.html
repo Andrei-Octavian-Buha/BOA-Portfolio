@@ -44,13 +44,20 @@
                     {{'ContactForm-Error' | translate}}
                 </div>
             }
+            @if(showSuccessMessage) {
+                <div class="text-[16px] text-green-500 font-semibold">
+                    {{'ContactForm-Success' | translate}}
+                </div>
+            }
             <div class="buttonPosition">
                 <div class="arrowAnimation mobile">
                     <img src="/assets/img/lineContact.png" alt="">
                 </div>
-                <button [disabled]="!model.agree" class="btnKontakt">{{'ContactForm-Btn' | translate}}</button>
+                <button [disabled]="!model.agree || !form.valid" class="btnKontakt">{{'ContactForm-Btn' | translate}}</button>
             </div>
         </div>
 
     </form>
+
+
 </div>

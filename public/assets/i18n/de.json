@@ -28,15 +28,15 @@
     "duration": "Dauer",
     "weks": "wochen",
     "join": {
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "description": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
       "implementation": "Ich habe einen Monat an diesem Projekt in einem 3-köpfigen Team gearbeitet. Es war eine neue und herausfordernde Erfahrung, so eng mit anderen zusammenzuarbeiten, aber auch sehr bereichernd. Wir haben Jira verwendet, um Aufgaben zu verwalten und unseren Fortschritt zu verfolgen, was dazu beigetragen hat, den Arbeitsablauf organisiert und effizient zu gestalten. Durch dieses Projekt habe ich viel über Teamarbeit, Kommunikation und das Arbeiten in einem strukturierten Entwicklungsprozess gelernt."
     },
     "elPolloLoco": {
-      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "description": "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um gegen das verrückte Huhn zu kämpfen.",
       "implementation": "Dies war mein erstes Spiel, das ich mit JavaScript entwickelt habe. Es ist ein Plattformspiel, in dem der Hauptcharakter Pepe Münzen und Tabasco-Salsa sammelt, um gegen ein verrücktes Huhn zu kämpfen. Für die Darstellung habe ich das HTML5-Canvas verwendet und einen objektorientierten Programmieransatz (OOP) mit Klassen und Objekten verfolgt. Durch dieses Projekt habe ich die Grundlagen der Spieleentwicklung gelernt, einschließlich Animation, Kollisionsabfrage und der Strukturierung von Code mithilfe von OOP. Das Projekt hat mich motiviert, weiterzulernen und in Zukunft komplexere Spiele zu entwickeln."
     },
     "dabubble": {
-      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeit-Nachrichten und eine leistungsstarke Kanalorganisation.",
       "implementation": "Als nächstes werde ich DaBubble entwickeln, eine Chat-App ähnlich wie Slack. Dieses Projekt wird mir helfen, Fähigkeiten in Echtzeitkommunikation, Benutzerauthentifizierung und kollaborativen Funktionen zu entwickeln und meine Full-Stack-Entwicklungskenntnisse zu verbessern."
     }
   },
@@ -63,6 +63,7 @@
   "ContactForm-Second":"Datenschutzerklärung",
   "ContactForm-Third":"gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
     "ContactForm-Error": "Sie müssen den Allgemeinen Geschäftsbedingungen zustimmen",
+    "ContactForm-Success": "Vielen Dank für Ihre Nachricht! Ich werde mich so schnell wie möglich bei Ihnen melden.",
   "ContactForm-Btn": "Absenden",
 
 
@@ -74,5 +75,40 @@
     "Skills": "Fähigkeiten",
     "Projects": "Projekte",
     "Contact": "Kontakt"
-  }
+  },
+
+  "LegalNotice": {
+    "Impressum": "Impressum",
+    "Angabe": "Angaben gemäß § 5 TMG",
+    "Kontakt": "Kontakt",
+    "Verantwortlich": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "Haftungsausschluss": "Haftungsausschluss",
+        "HaftungsausschlussMessage": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    "Urheberrecht": "Urheberrecht",
+        "UrheberrechtMessage": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtesbedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+    "Datenschutzerklarung": {
+      "Title": "Datenschutzerklärung",
+      "1": "Allgemeine Hinweise",
+      "1Message":"Diese Datenschutzerklärung informiert Sie darüber, wie auf dieser Website personenbezogene Daten verarbeitet werden. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können.",
+      "2": "Verantwortlicher",
+      "2Message":"",
+      "3": "Datenerfassung auf dieser Website",
+      "3Message":"    Server-Log-Dateien\nDer Provider der Seiten erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browserautomatisch übermittelt. \nDies sind: ",
+      "3MessageList": "Browsertyp und Browserversion\nVerwendetes Betriebssystem\nReferrer URL\nHostname des zugreifenden Rechners\nUhrzeit der Serveranfrage\nIP-Adresse",
+      "3Coockies": "Cookies",
+      "3CoockiesMessage": "Diese Website verwendet nur technisch notwendige Cookies.",
+      "4": "SSL- bzw. TLS-Verschlüsselung",
+      "4Message":"Diese Seite nutzt eine SSL- bzw. TLS-Verschlüsselung aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte.",
+      "5": "Rechte der betroffenen Person",
+      "5Message":"Sie haben jederzeit das Recht auf:",
+      "5MessageRightsList": "- Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)\n- Berichtigung (Art. 16 DSGVO)\n- Löschung (Art. 17 DSGVO)\n- Einschränkung der Verarbeitung (Art. 18 DSGVO)\n- Datenübertragbarkeit (Art. 20 DSGVO)\n- Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)",
+      "5MessageKontakt": "Wenden Sie sich dazu bitte an die oben genannte Kontaktadresse.",
+      "6": "Beschwerderecht",
+      "6Message":"Im Falle datenschutzrechtlicher Verstöße steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu:",
+      "7": "Externe Dienste",
+      "7Message":"Diese Website verwendet keine Analyse- oder Tracking-Tools wie Google Analytics oder externe Dienste wie Google Fonts."
+    }
+      }
+
+      
 }       

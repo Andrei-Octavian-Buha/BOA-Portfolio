@@ -1,4 +1,8 @@
-<section class="relative ">
+<section class="relative"  
+[ngClass]="{
+  'bg-[rgba(14,16,19,0.5)] shadow-md': isScrolled,
+  'bg-transparent': !isScrolled
+}">
     <div class="flex items-center justify-between max-w-[1440px] w-full sm:pl-[72px] sm:pr-[72px]" >
         <app-logo class=""> </app-logo>
 

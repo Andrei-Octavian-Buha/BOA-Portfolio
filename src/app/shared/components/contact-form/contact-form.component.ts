@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [CommonModule, FormsModule , RouterModule, TranslateModule],
+  imports: [CommonModule, FormsModule, RouterModule, TranslateModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
@@ -20,7 +20,7 @@ export class ContactFormComponent {
   showFirstNameError = false;
   showEmailError = false;
   showTextError = false;
-
+ showSuccessMessage = false;
   http = inject(HttpClient);
 
   post = {
@@ -59,6 +59,8 @@ onSubmit(form: NgForm) {
           this.showFirstNameError = false;
           this.showEmailError = false;
           this.showTextError = false;
+          this.showSuccessMessage = true; // Show success message
+          this.resetmessage();
           console.log('Form submitted successfully', response); 
         },
         error: (error) => {
@@ -73,7 +75,11 @@ onSubmit(form: NgForm) {
   }
 }
 
-
+  resetmessage() {
+    setTimeout(() => {
+    this.showSuccessMessage = false; 
+    }, 3000); // 
+  }
     resetForm(form: NgForm) {
       form.reset(); // Resets form controls (valid, touched, dirty)
       // this.model = {    // Clear model data

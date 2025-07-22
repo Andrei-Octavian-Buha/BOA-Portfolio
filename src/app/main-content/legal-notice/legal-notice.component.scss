@@ -1,11 +1,7 @@
 @use './../../../styles.scss' as *;
 section{  
     box-sizing: border-box;
-    background-image: url('/assets/img/projecktBg.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #1D1D1D; 
+  background: linear-gradient(to bottom, #c7c7c7, white);
     display: flex; 
     justify-content: center;
     min-height: 100vh;
@@ -14,15 +10,25 @@ section{
         width: 100%;
         display: flex;
         flex-direction: column;
+                padding: 0px 120px;
     }
 }
-.layoutContainer{
-    margin-top: 128px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px
+
+h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: #0E1013;
+    margin-bottom: 16px;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 18px;
+    color: #0E1013;
+    margin-bottom: 16px;
+}
+p{
+  white-space: normal;
 }
 
 .contentContainer{
@@ -32,99 +38,12 @@ section{
     gap: 152px;
 }
 
-.projectReviewContainer{
-    >div{
-        >img{
-        max-height: 399px;
-        border-radius: 20px;
-    }
-    }
-    >span{
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        gap: 32px;
-    }
-}
-.btnKontakt{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  max-height: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 12px 24px;
-  border-radius: 100px;
-  transition: all 0.3s ease;
-
-  &:hover{
-    cursor: pointer;
-    background-color: #F87A55;
-    box-shadow: none;
-    transform: translate(2px, 4px); 
-  }
-}
-
-.skillsContainer{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: default;
-    >img{
-        width: 24px;
-    }
-    >span{
-        font-weight: 600;
-        font-size: 16px;
-        color: #0E1013;
-    }
-}
-
-.arrowAnimation {
-  position: relative;
-  display: flex;
-
-  overflow: hidden;
-    width: 100%;
-  img {
-    display: block;
-    width: 280px;
-    height: auto;
-    z-index: 1;
-    position: relative;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 70%);
-    mask-size: 300% 100%;
-    mask-position: 0% 0%;
-    mask-repeat: no-repeat;
-    animation: maskMove 3s infinite ease-in-out;
-  }
-}
-
-@keyframes maskMove {
-  0% {
-    mask-position: 0% 0%;
-  }
-  50% {
-    mask-position: 100% 0%;
-  }
-  75%{
-    mask-position: 100% 0%;
-  }
-  100% {
-    mask-position: 0% 0%;
-  }
-}
 
 
 @media only screen and (max-width: 1024px){
     section{  
     box-sizing: border-box;
-    background-image: url('/assets/img/mobileprojecktBg.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-color: #1D1D1D; 
+  background: linear-gradient(to bottom, black, white);
     display: flex; 
     justify-content: center;
     min-height: 100vh;
@@ -136,36 +55,11 @@ section{
         padding: 0 16px;
     }
 }
-
-.contentContainer{
-    padding: 0 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 152px;
 }
 
-}
-
-
-@media only screen and (max-width: 1024px){
-.btnKontakt{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  max-height: 40px;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 0px;
-  border-radius: 100px;
-  transition: all 0.3s ease;
-
-  &:hover{
-    cursor: pointer;
-    background-color: #F87A55;
-    box-shadow: none;
-    transform: translate(2px, 4px); 
+@media only screen and (max-width: 764px){
+  pre{
+      white-space: normal;
   }
 }
-}
+

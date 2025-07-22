@@ -5,15 +5,15 @@ import { LegalNoticeComponent } from './main-content/legal-notice/legal-notice.c
 export const routes: Routes = [
     {   path: '', 
             component: MainContentComponent,
-            title: 'Home - BOA Portfolio',
+            title: 'Home - Andrei Buha Portofolio',
         },
         {   path: 'projects/:id', 
             component: ProjectListComponent,
-            title: 'Home - BOA Portfolio',
+            title: 'Projects - Andrei Buha Portofolio',
         },
         {
             path: 'legal-notice',
             component: LegalNoticeComponent, 
-            title: 'Legal Notice - BOA Portfolio',
+            title: 'Legal Notice - Andrei Buha Portofolio',
         }
 ];

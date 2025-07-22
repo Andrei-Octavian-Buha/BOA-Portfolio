@@ -62,6 +62,7 @@
   "ContactForm-Second":"privacy policy",
   "ContactForm-Third":"and agree to the processing of my data as outlined.",
   "ContactForm-Error": "You must agree to the terms and conditions",
+  "ContactForm-Success": "Thank you for your message! I will get back to you as soon as possible.",
   "ContactForm-Btn": "Submit",
 
   "ProjectsListBtnGoBack": "Go Back",
@@ -72,5 +73,38 @@
     "Skills": "Skills",
     "Projects": "Projects",
     "Contact": "Contact"
+  },
+
+  "LegalNotice": {
+  "Impressum": "Imprint",
+  "Angabe": "Information according to § 5 TMG",
+  "Kontakt": "Contact",
+  "Verantwortlich": "Responsible for the content according to § 55 Abs. 2 RStV",
+  "Haftungsausschluss": "Disclaimer",
+      "HaftungsausschlussMessage": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content.",
+  "Urheberrecht": "Copyright",
+      "UrheberrechtMessage": "The content and works created by the site operator on these pages are subject to German copyright law. Duplication, editing, distribution, and any kind of use beyond the limits of copyright require the written consent of the respective author or creator.",
+  "Datenschutzerklarung": {
+    "Title": "Privacy Policy",
+    "1": "General Information",
+    "1Message": "This privacy policy informs you about how personal data is processed on this website. Personal data is any information by which you can be personally identified.",
+    "2": "Controller",
+    "2Message": "",
+    "3": "Data collection on this website",
+    "3Message": "Server Log Files\nThe provider of these pages automatically collects and stores information in so-called server log files, which your browser automatically transmits.\nThese include:",
+    "3MessageList": "Browser type and browser version\nOperating system used\nReferrer URL\nHostname of the accessing computer\nTime of the server request\nIP address",
+    "3Coockies": "Cookies",
+    "3CoockiesMessage": " This website only uses technically necessary cookies. No analysis or tracking is performed through cookies.",
+    "4": "SSL or TLS encryption",
+    "4Message": "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content.",
+    "5": "Rights of the data subject",
+    "5Message": "You have the right at any time to:",
+    "5MessageRightsList": "- Right to access your stored data (Art. 15 GDPR)\n- Correction (Art. 16 GDPR)\n- Deletion (Art. 17 GDPR)\n- Restriction of processing (Art. 18 GDPR)\n- Data portability (Art. 20 GDPR)\n- Objection to processing (Art. 21 GDPR)",
+    "5MessageKontakt": "Please contact the address mentioned above for this purpose.",
+    "6": "Right to lodge a complaint",
+    "6Message": "In the event of data protection violations, you have the right to lodge a complaint with the competent supervisory authority:",
+    "7": "External services",
+    "7Message": "This website does not use any analytics or tracking tools like Google Analytics or external services like Google Fonts."
   }
+}
 }

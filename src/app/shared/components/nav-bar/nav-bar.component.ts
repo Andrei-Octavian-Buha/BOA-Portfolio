@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, HostListener} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LogoComponent } from '../logo/logo.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -40,6 +40,12 @@ export class NavBarComponent {
     isMenuOpen = false;
 
 
+      isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
+  }
 
   constructor(private translate: TranslateService) {
     this.selectedLang = localStorage.getItem('lang') || 'en';
