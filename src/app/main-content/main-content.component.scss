@@ -1,0 +1,50 @@
+@use './../../styles.scss' as *;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/footerbg.png');
+    background-position: center top;
+    background-size: 100% 150%;
+    background-color: $ColorWhite;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    padding-top: 144px;
+    gap: 8px;
+    >.container{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 120px;
+    }
+}
+
+@media (max-width: 887px) {
+    .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/img/footerbg.png');
+    background-position: center top;
+    background-size: 100% 150%;
+    background-color: $ColorWhite;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+    padding-top: 86px;
+    >.container{
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0 16px;
+    }
+}
+}

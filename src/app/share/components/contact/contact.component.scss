@@ -1,11 +1,23 @@
 @use './../../../../styles.scss' as *;
-div{
-        max-width: 1440px;
+.topContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $ColorWhite;
+    .leftContainer{
+        max-width: 560px;
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
-        gap:8px
+        flex-direction: column;
+        gap: 48px;
+        // justify-content: space-between;
+        // align-items: center;
+    }
+    .rightContainer{
+        max-width: 560px;
+        width: 100%;
+        display: flex;
+    }
 }
 
 .arrowAnimation {
@@ -191,7 +203,6 @@ div{
 
 .logoContainer{
   display: flex;
-  align-items: start;
   flex-direction: column;
   gap: 16px;
   >span{
@@ -208,7 +219,6 @@ div{
 }
 
 @media (max-width: 887px) {
-
 .topContainer{
     width: 100%;
     display: flex;
@@ -216,6 +226,7 @@ div{
     align-items: center;
     justify-content: space-between;
     color: $ColorWhite;
+    padding-top: 118px;
     .leftContainer{
         max-width: 560px;
         width: 100%;

@@ -7,10 +7,12 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { TestimonialComponent } from "./testimonial/testimonial.component";
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { NavBarComponent } from '../shared/components/nav-bar/nav-bar.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { ContactComponent } from '../share/components/contact/contact.component';
 
 @Component({
   selector: 'app-main-content',
-  imports: [CommonModule, HeroComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, TestimonialComponent, FooterComponent, NavBarComponent],
+  imports: [CommonModule, HeroComponent, AboutMeComponent, SkillsComponent, ProjectsComponent, TestimonialComponent, FooterComponent, NavBarComponent, TranslateModule , ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
