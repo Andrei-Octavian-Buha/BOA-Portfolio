@@ -10,8 +10,6 @@
         display: flex;
         flex-direction: column;
         gap: 48px;
-        // justify-content: space-between;
-        // align-items: center;
     }
     .rightContainer{
         max-width: 560px;
@@ -116,21 +114,21 @@
 
 .rotateMoveAnimation {
     width: 32px;
-    position: absolute; /* Poziționează absolut față de .socialLinks */
-    top: 0 ; /* Începe din centrul vertical */
-    left: 50%; /* Începe din centrul orizontal */
-    transform: translate(-50%, -50%); /* Centrează perfect */
+    position: absolute; 
+    top: 0 ; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     transform-origin: center center;
     animation: rotateMove 0.6s ease-in-out forwards;
 }
 
 @keyframes rotateMove {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg); /* Pornește din centru, fără rotație */
+        transform: translate(-50%, -50%) rotate(0deg); 
         opacity: 0;
     }
     25% {
-        transform: translate(25%, -50%) rotate(90deg); /* Mișcă parțial spre dreapta */
+        transform: translate(25%, -50%) rotate(90deg); 
         opacity: 0.5;
     }
     50% {
@@ -142,7 +140,7 @@
         opacity: 1;
     }
     100% {
-        transform: translate(100%, -50%) rotate(360deg); /* Ajunge în dreapta, complet rotit */
+        transform: translate(100%, -50%) rotate(360deg);
         opacity: 1;
     }
 }
@@ -192,12 +190,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: -1;
-    clip-path: inset(0 100% 0 0); // Ascunde inițial (decupare 100% din dreapta)
+    clip-path: inset(0 100% 0 0); 
     transition: clip-path 0.6s ease;
   }
 
   &:hover::before {
-    clip-path: inset(0 0 0 0); // Reveal complet (fără decupare)
+    clip-path: inset(0 0 0 0); 
   }
 }
 
@@ -218,7 +216,7 @@
 
 }
 
-@media (max-width: 887px) {
+@media (max-width: 1024px) {
 .topContainer{
     width: 100%;
     display: flex;

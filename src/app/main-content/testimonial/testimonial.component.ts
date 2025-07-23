@@ -41,6 +41,7 @@ export class TestimonialComponent {
       job: 'AI Collaborator',
       feedback: 'A motivated and forward-thinking developer, eager to build real solutions using web tech and AI. Shows strong growth in Angular, with clear plans to expand into Python and GPT-driven apps.',
       date: '2025-07-20',
+      link: 'https://github.com/Andrei-Octavian-Buha',
       bg: 0,
       card: 3
     }

@@ -21,7 +21,7 @@
             </div>
             <div class="form-group">
                 <label for="textContact" class="labelStyle">{{'contact.text' | translate }}</label>
-                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="{{'contact.textPlaceholder' | translate }}"  minlength="10" [(ngModel)]="model.text" name="text" required #text="ngModel">
+                <input *ngIf="!showTextError"  (blur)="onInputBlur(text)" id="textContact" class="form-control" type="text" placeholder="{{'contact.textPlaceholder' | translate }}" [(ngModel)]="model.text" name="text" required #text="ngModel">
                 @if (showTextError) {
                     <div class="alertError" (click)="showTextError = false">
                         <p>{{'contact.textError' | translate }}</p>
@@ -56,8 +56,5 @@
                 <button [disabled]="!model.agree || !form.valid" class="btnKontakt">{{'ContactForm-Btn' | translate}}</button>
             </div>
         </div>
-
     </form>
-
-
 </div>

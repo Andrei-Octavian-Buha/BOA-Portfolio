@@ -2,7 +2,7 @@
 
 section{
     font-family: 'Bricolage Grotesque', sans-serif !important;
-    background-image: url('/assets/img/skillsbg.png');
+    background-image: url('/assets/img/herobg.png');
     background-repeat: no-repeat;
     background-position: center bottom; 
     background-size: 100% 150%;  
@@ -74,13 +74,13 @@ h2{
 }
 @keyframes revealDiagonal {
     0% {
-        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0); /* colț dreapta sus */
+        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0); 
     }
     50% {
-        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); /* acoperă tot */
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); 
     }
     100% {
-        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0); /* revine la inițial */
+        clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0); 
     }
 }
 
@@ -96,7 +96,8 @@ h2{
 
   .imgContainer{
     display: grid;
-    grid-template-columns: repeat(5, minmax(auto,98px)); // 5 Spalten, gleichmäßig verteilt
+    // grid-template-columns: repeat(5, minmax(auto,98px)); // 5 Spalten, gleichmäßig verteilt
+    grid-template-columns: repeat(5, minmax(80px, 98px)); 
     grid-template-rows: repeat(2, auto);    // 2 Reihen mit automatischer Höhe
     gap: 24px 40px; // Abstand zwischen den Zellen, anpassbar
     >div{
@@ -186,7 +187,12 @@ h2{
         font-weight: 400;
     color: $ColorWhite;
 }
-
+@media (max-width: 1024px){
+    .bottomContainer{
+    flex-direction: column;
+    gap: 48px;
+}
+}
 @media (max-width: 887px) {
 
 section{
@@ -224,13 +230,7 @@ section{
     }
 }
 
-.bottomContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    gap: 48px;
-}
+
   .imgContainer{
     display: grid;
     grid-template-columns: repeat(3, 1fr); // 5 Spalten, gleichmäßig verteilt

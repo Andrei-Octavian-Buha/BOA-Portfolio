@@ -4,11 +4,10 @@ import { NavBarComponent } from '../../shared/components/nav-bar/nav-bar.compone
 import { ActivatedRoute } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { FooterComponent } from "../../shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-legal-notice',
-  imports: [CommonModule, NavBarComponent, RouterModule, TranslateModule, FooterComponent],
+  imports: [CommonModule, NavBarComponent, RouterModule, TranslateModule],
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
 })
