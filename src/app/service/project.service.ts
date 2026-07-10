@@ -62,8 +62,8 @@ export class ProjectService {
     ],
     gitLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
     demoLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
-    duration: 0,
-    demo:false,
+    duration: 8,
+    demo:true,
     logo: true,
     featured: false
   }
