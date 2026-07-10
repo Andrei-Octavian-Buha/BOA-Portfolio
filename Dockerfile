@@ -7,6 +7,7 @@ RUN npm run build --prod
 
 # Pasul 2: Servim aplicația cu Nginx
 FROM nginx:alpine
+RUN rm -rf /usr/share/nginx/html/*
 # Aici este cheia: copiăm fișierele build-uite în folderul Nginx
 COPY --from=build /app/dist/aboportofolio /usr/share/nginx/html
 EXPOSE 80
