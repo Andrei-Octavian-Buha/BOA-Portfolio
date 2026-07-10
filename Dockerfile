@@ -2,7 +2,7 @@
 FROM node:18 AS build
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm run build --prod
 
 # Pasul 2: Servim aplicația cu Nginx
