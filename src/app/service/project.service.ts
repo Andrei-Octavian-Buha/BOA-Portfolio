@@ -61,7 +61,7 @@ export class ProjectService {
         {src:'firebase', alt:'Firebase'}
     ],
     gitLink: 'https://github.com/Andrei-Octavian-Buha/DABubble.git',
-    demoLink: 'https://github.com/Andrei-Octavian-Buha/DABubble.git',
+    demoLink: 'https://dabubble.andreibuha.com/',
     duration: 8,
     demo:true,
     logo: true,
