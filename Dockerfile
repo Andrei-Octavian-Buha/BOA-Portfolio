@@ -1,13 +1,13 @@
-# Pasul 1: Build Angular
-FROM node:22 AS build
+# Pasul 1: Construim aplicația
+FROM node:18 AS build
 WORKDIR /app
-COPY package*.json ./
-RUN npm install --legacy-peer-deps
 COPY . .
-RUN npm run build
+RUN npm install
+RUN npm run build --prod
 
-# Pasul 2: Servire cu Nginx
+# Pasul 2: Servim aplicația cu Nginx
 FROM nginx:alpine
-COPY --from=build /app/dist /usr/share/nginx/html
+# Aici este cheia: copiăm fișierele build-uite în folderul Nginx
+COPY --from=build /app/dist/BOA-Portfolio /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
