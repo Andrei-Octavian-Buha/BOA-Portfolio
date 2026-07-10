@@ -8,6 +8,6 @@ RUN npm run build --prod
 # Pasul 2: Servim aplicația cu Nginx
 FROM nginx:alpine
 # Aici este cheia: copiăm fișierele build-uite în folderul Nginx
-COPY --from=build /app/dist/BOA-Portfolio /usr/share/nginx/html
+COPY --from=build /app/dist/aboportofolio /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
