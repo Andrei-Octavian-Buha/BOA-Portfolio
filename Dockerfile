@@ -8,6 +8,6 @@ RUN npm run build
 
 # Pasul 2: Servire cu Nginx
 FROM nginx:alpine
-COPY --from=build /app/dist/numele-proiectului-tau /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
