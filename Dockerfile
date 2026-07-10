@@ -9,6 +9,8 @@ RUN npm run build --prod
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 # Aici este cheia: copiăm fișierele build-uite în folderul Nginx
-COPY --from=build /app/dist/aboportofolio /usr/share/nginx/html
+# În loc de: COPY --from=build /app/dist/aboportofolio /usr/share/nginx/html
+# Folosește:
+COPY --from=build /app/dist/aboportofolio/browser /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
