@@ -60,8 +60,8 @@ export class ProjectService {
         {src:'angular', alt:'Angular'},
         {src:'firebase', alt:'Firebase'}
     ],
-    gitLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
-    demoLink: 'https://github.com/Andrei-Octavian-Buha/El-Pollo-Loco.git',
+    gitLink: 'https://github.com/Andrei-Octavian-Buha/DABubble.git',
+    demoLink: 'https://github.com/Andrei-Octavian-Buha/DABubble.git',
     duration: 8,
     demo:true,
     logo: true,
