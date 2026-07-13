@@ -41,7 +41,7 @@
     },
     "coderr": {
       "description": "Dieses Projekt bildet das Frontend für die Coderr-Anwendung. Das Frontend-Grundgerüst wurde vom Team der Developer Akademie bereitgestellt, während ich das gesamte Django-Backend entwickelt und implementiert habe. Diese Kombination ermöglicht eine effiziente Kommunikation zwischen einer schlanken Vanilla-JavaScript-Benutzeroberfläche und einem leistungsstarken Backend-System.",
-      "implementation": "Als nächstes werde ich DaBubble entwickeln, eine Chat-App ähnlich wie Slack. Dieses Projekt wird mir helfen, Fähigkeiten in Echtzeitkommunikation, Benutzerauthentifizierung und kollaborativen Funktionen zu entwickeln und meine Full-Stack-Entwicklungskenntnisse zu verbessern."
+      "implementation": "Für das Projekt Coderr habe ich das Backend als RESTful API mit Python und Django Rest Framework von Grund auf neu entwickelt. Mein Fokus lag dabei auf einer sicheren Benutzerauthentifizierung via JWT, einer effizienten Datenbankstruktur zur Verwaltung von Channels und Nachrichten sowie der nahtlosen Anbindung an das bereitgestellte Vanilla-JavaScript-Frontend. Durch dieses Projekt konnte ich meine Full-Stack-Expertise vertiefen und komplexe API-Endpunkte für eine performante Kommunikation optimieren."
     }
   },
 
