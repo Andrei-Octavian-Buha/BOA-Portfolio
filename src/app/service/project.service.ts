@@ -66,6 +66,25 @@ export class ProjectService {
     demo:true,
     logo: true,
     featured: false
+  },
+    { 
+    id: "coderr",
+    title: 'Coderr',
+    descriptionKey: 'projects.coderr.description',
+        implementationKey: 'projects.coderr.implementation',
+    img: '/assets/img/daBubble.png',
+    imgBg: '/assets/img/daBubble.png',
+        skills: [
+        {src:'py', alt:'Python'},
+        {src:'djnago', alt:'Django'},
+        {src:'drf', alt:'Django Rest Framework'},
+    ],
+    gitLink: 'https://github.com/Andrei-Octavian-Buha/coderr',
+    demoLink: 'https://coderr.andreibuha.com/',
+    duration: 3,
+    demo:true,
+    logo: true,
+    featured: false
   }
   ];
 
