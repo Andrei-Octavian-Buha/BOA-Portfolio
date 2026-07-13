@@ -38,6 +38,10 @@
     "dabubble": {
       "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
       "implementation": "Next, I will build DaBubble, a chat app similar to Slack. This project will help me develop skills in real-time communication, user authentication, and collaborative features, improving my full-stack development abilities."
+    },
+    "coderr": {
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "implementation": "Next, I will build DaBubble, a chat app similar to Slack. This project will help me develop skills in real-time communication, user authentication, and collaborative features, improving my full-stack development abilities."
     }
   },
   "Testimonial-Intro": "IN THEIR WORDS:",
