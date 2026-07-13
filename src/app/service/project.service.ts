@@ -72,8 +72,8 @@ export class ProjectService {
     title: 'Coderr',
     descriptionKey: 'projects.coderr.description',
         implementationKey: 'projects.coderr.implementation',
-    img: '/assets/img/daBubble.png',
-    imgBg: '/assets/img/daBubble.png',
+    img: '/assets/img/coderr.png',
+    imgBg: '/assets/img/coderr.png',
         skills: [
         {src:'py', alt:'Python'},
         {src:'djnago', alt:'Django'},
