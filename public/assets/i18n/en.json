@@ -40,7 +40,7 @@
       "implementation": "Next, I will build DaBubble, a chat app similar to Slack. This project will help me develop skills in real-time communication, user authentication, and collaborative features, improving my full-stack development abilities."
     },
     "coderr": {
-      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "description": "This project serves as the frontend implementation for the Coderr application. While the frontend base was provided by the Developer Akademie team, I have developed the complete Django-based backend to power the application. This setup allows for a seamless integration between a clean, vanilla JavaScript interface and a robust Python-driven server.",
       "implementation": "Next, I will build DaBubble, a chat app similar to Slack. This project will help me develop skills in real-time communication, user authentication, and collaborative features, improving my full-stack development abilities."
     }
   },
